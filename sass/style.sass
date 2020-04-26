@@ -1,6 +1,6 @@
 // mixins
 =desktop 
-  @media screen and (max-width: 1199px) 
+  @media screen and (max-width: 1160px) 
     @content
 
 =tablet 
@@ -24,14 +24,26 @@
     display: $display
     position: $pos
 
-// import blocks  
+=link
+  text-decoration: none
+  color: #ffffff
+
+// import blocks 
+@import 'fonts'
+
+@import 'colors'
+
 @import 'grid'
 
 @import 'interface'
 
 @import 'normalize'
 
+@import 'blocks/header'
+
 @import 'blocks/work-sequence'
 
 @import 'blocks/social'
+
+@import 'blocks/footer'
 

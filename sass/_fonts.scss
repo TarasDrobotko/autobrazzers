@@ -1,0 +1,46 @@
+@font-face {
+  font-family: "Open Sans Regular";
+  src: url("../fonts/opensans/OpenSans-Regular.eot");
+  src: url("../fonts/opensans/OpenSans-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/opensans/OpenSans-Regular.woff") format("woff"),
+    url("../fonts/opensans/OpenSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans Bold";
+  font-display: swap;
+  src: url("../fonts/opensans/OpenSans-Bold.eot");
+  src: url("../fonts/opensans/OpenSans-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/opensans/OpenSans-Bold.woff") format("woff"),
+    url("../fonts/opensans/OpenSans-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans Light";
+  font-display: swap;
+  src: url("../fonts/opensans/OpenSans-Light.eot");
+  src: url("../fonts/opensans/OpenSans-Light.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/opensans/OpenSans-Light.woff") format("woff"),
+    url("../fonts/OpenSans-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin bold {
+  font-family: "Open Sans Bold", sans-serif;
+}
+
+@mixin regular {
+  font-family: "Open Sans Regular", sans-serif;
+}
+
+@mixin light {
+  font-family: "Open Sans Light", sans-serif;
+}
