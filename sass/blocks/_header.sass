@@ -17,123 +17,123 @@ header
     .logo
         max-width: 160px
         flex: 1 160px
-    nav 
-        flex: 1 auto
-        .menu-button
-            position: relative
-            width: 50px
-            height: 50px
-            border: 1px solid rgba(#fff, .4)
-            border-radius: 50% 
-            background-color: transparent
-            right: 6px
-            top: -20px
-            cursor: pointer
-            &:focus
-                outline: none
-            &_active span
-                height: 0
-            &_active span::before
-                transform: rotate(45deg)
-            &_active span::after
-                transform: rotate(-45deg)
-                
-            &__line, &__line::before, &__line::after
-                position: absolute
-                top: 50%
-                display: block
-                margin-top: -1px
-                left: 50%
-                margin-left: -10px
-                width: 20px
-                height: 2px
-                background-color: $gold
-            &__line::before, &__line::after
-                content: ''
-                display: block
-                transition: 0.2s
-            &__line::before
-                transform: translateY(-5px)
-            &__line::after
-                transform: translateY(5px)
-        .main-menu
-            padding-left: 0
-            &__link
-                +link
-            &__li_active
-                & #main-menu__menu
-                    color: $gold
-                & #main-menu__menu::before
-                    width: 100%
-            &_link-follow svg:hover
-                fill: $gold-dark
-            &_link-light:hover
-                color: #d8cbcb
-            &-nested
-                display: none
-                list-style: none
-                font-size: 14px
-                text-align: left
-                position: absolute
-                left: -160px
-                height: 44px
-                line-height: 44px
-                padding-left: 0
-                width: calc(100% + 160px)
-                &>li:nth-child(7)~li
-                    display: none
-                li 
-                    padding-left: 0
-                    padding-right: 2.15rem
-                &__link 
-                    +link
-                    color: rgba(255, 255, 255, .7)
-                    &:hover 
-                        color: #fff
-                &_active
-                    display: flex
-                    align-items: center
-        #main-menu
-            display: flex
-            justify-content: flex-end
+nav 
+    flex: 1 auto
+    .menu-button
+        position: relative
+        width: 50px
+        height: 50px
+        border: 1px solid rgba(#fff, .4)
+        border-radius: 50% 
+        background-color: transparent
+        right: 6px
+        top: -20px
+        cursor: pointer
+        &:focus
+            outline: none
+        &_active span
+            height: 0
+        &_active span::before
+            transform: rotate(45deg)
+        &_active span::after
+            transform: rotate(-45deg)
+            
+        &__line, &__line::before, &__line::after
+            position: absolute
+            top: 50%
+            display: block
+            margin-top: -1px
+            left: 50%
+            margin-left: -10px
+            width: 20px
+            height: 2px
+            background-color: $gold
+        &__line::before, &__line::after
+            content: ''
+            display: block
+            transition: 0.2s
+        &__line::before
+            transform: translateY(-5px)
+        &__line::after
+            transform: translateY(5px)
+    .main-menu
+        display: flex
+        justify-content: flex-end
+        list-style: none
+        text-transform: uppercase
+        position: relative
+        color: #ffffff
+        flex-basis: 1 auto
+        padding-left: 0
+        &__link
+            +link
+        &__li_active
+            & #main-menu__menu
+                color: $gold
+            & #main-menu__menu::before
+                width: 100%
+        &_link-follow svg:hover
+            fill: $gold-dark
+        &_link-light:hover
+            color: #d8cbcb
+        &__tel
+            display: inline-block
+            vertical-align: top
+            margin-left: 9px
+        & li:nth-child(2) a
+            padding: 3px 33px
+            border-left: 1px solid #6d6d6d
+            border-right: 1px solid #6d6d6d
+        &-nested
+            display: none
             list-style: none
-            text-transform: uppercase
+            font-size: 14px
+            text-align: left
+            position: absolute
+            left: -160px
+            height: 44px
+            line-height: 44px
+            padding-left: 0
+            width: calc(100% + 160px)
+            &>li:nth-child(7)~li
+                display: none
+            li 
+                padding-left: 0
+                padding-right: 2.15rem
+            &__link 
+                +link
+                color: rgba(255, 255, 255, .7)
+                &:hover 
+                    color: #fff
+            &_active
+                display: flex
+                align-items: center
+    #main-menu
+        &>li:nth-last-of-type(1)
+            padding-left: 43px
+        &>li:nth-last-of-type(2)
+            padding-left: 13px
+        &>li:nth-last-of-type(3)
+            padding-left: 80px
+        &>li:nth-last-of-type(4)
+            padding-left: 33px
+        &>li:nth-last-of-type(5)
+            padding-left: 33px
+        li img 
+            height: 22px
+        &__menu
+            display: inline-block
+            vertical-align: top
             position: relative
-            color: #ffffff
-            flex-basis: 1 auto
-            &>li:nth-last-of-type(1)
-                padding-left: 43px
-            &>li:nth-last-of-type(2)
-                padding-left: 13px
-            &>li:nth-last-of-type(3)
-                padding-left: 80px
-            &>li:nth-last-of-type(4)
-                padding-left: 33px
-            &>li:nth-last-of-type(5)
-                padding-left: 33px
-            li img 
-                height: 22px
-            &__tel
-                display: inline-block
-                vertical-align: top
-                margin-left: 9px
-            &__news
-                padding: 3px 33px
-                border-left: 1px solid #6d6d6d
-                border-right: 1px solid #6d6d6d
-            &__menu
-                display: inline-block
-                vertical-align: top
-                position: relative
-                cursor: pointer
-                &::before
-                    +pseudo
-                    right: 0
-                    bottom: -4px
-                    width: 0%
-                    height: 1px
-                    background-color: $gold
-                    transition: 0.3s
+            cursor: pointer
+            &::before
+                +pseudo
+                right: 0
+                bottom: -4px
+                width: 0%
+                height: 1px
+                background-color: $gold
+                transition: 0.3s
             
 .button
     &__login-link

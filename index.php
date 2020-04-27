@@ -31,10 +31,10 @@
                 <?php include 'sections_include/main_menu_li.php'; ?>
               </ul>
             </li>
-            <li><a href="#" id="main-menu__news" class="main-menu__link main-menu_link-light">Новости</a></li>
+            <li><a href="#" class="main-menu__link main-menu_link-light">Новости</a></li>
             <li><a href="tel:+380970770975" class="main-menu__link main-menu_link-light">
                 <img src="/icons/menu_icons/telephone.svg" alt="telephone icon" class="main-menu_tel-img" />
-                <span id="main-menu__tel">+38 (097) 077 09 75</span>
+                <span class="main-menu__tel">+38 (097) 077 09 75</span>
               </a>
             </li>
             <li>
@@ -253,23 +253,34 @@
       </p>
     </div>
   </main>
-  <footer>
-    <div class="logo"></div>
-    <div id="menu-footer">
-      <ul>
-        <li>Главная</li>
-        <li>Новости</li>
-        <li>+38 (097) 077 09 75</li>
-        <li>
-          <select>
-            <option>РУС</option>
-            <option>ENG</option>
-          </select>
-        </li>
-      </ul>
-    </div>
-    <div id="social-footer">
-      <?php include 'sections_include/svg_social_icons.php'; ?>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-group">
+        <div class="logo"><img src="/images/logo.png" alt="Logo autobrazers" /></div>
+        <nav>
+          <ul class="main-menu menu__footer">
+            <li><a href="#" class="main-menu__link main-menu_link-light">Главная</a></li>
+            <li><a href="#" class="main-menu__link main-menu_link-light">Новости</a></li>
+            <li><a href="tel:+380970770975" class="main-menu__link main-menu_link-light">
+                <img src="/icons/menu_icons/telephone.svg" alt="telephone icon" class="main-menu_tel-img" />
+                <span class="main-menu__tel">+38 (097) 077 09 75</span>
+              </a>
+            </li>
+            <li>
+              <div class="dropdown">
+                <div class="dropdown__btn">Рус</div>
+                <div class="dropdown__content">
+                  <a href="#" class="dropdown__link" data-value="Рус">Рус</a>
+                  <a href="#" class="dropdown__link" data-value="Eng">Eng</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <div class="social-footer">
+          <?php include 'sections_include/svg_social_icons.php'; ?>
+        </div>
+      </div>
     </div>
   </footer>
 

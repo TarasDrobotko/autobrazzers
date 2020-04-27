@@ -1,0 +1,47 @@
+.footer
+    background-color: #1c1c1c
+    &-group
+        height: 135px
+        display: flex
+        align-items: center
+        flex-flow: row wrap
+        nav
+            .main-menu
+                justify-content: flex-start  
+                li img
+                    height: 22px
+                li:first-child
+                    padding-right: 35px
+                    padding-left: 29px
+                li:nth-of-type(3)
+                    padding-left: 34px
+                li:nth-of-type(4)
+                    flex-grow: 1
+                    text-align: right
+                
+                .dropdown__content a 
+                    text-align: left
+
++tablet 
+    .footer
+        padding: 20px 0
+        &-group
+            flex-direction: column
+            justify-content: center
+            height: 100%
+            nav
+                .main-menu.menu__footer
+                    flex-direction: column
+                    align-items: center
+                    li 
+                        padding: 0 0 15px 0
+
+                        &:nth-of-type(2) a
+                            border: none
+                            padding: 0
+                        &:nth-of-type(4)
+                            padding-left: 50px
+
+
+
+
