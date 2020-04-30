@@ -1,0 +1,128 @@
+.contacts
+   position: relative
+   h2 
+      position: absolute
+      top: 0px
+      left: 50%
+      transform: translateX(-50%)
+      z-index: 3
+   &-block
+      width: 350px
+      height: 293px
+      background-color: rgba(#000000, .7)
+      border-radius: 20px
+      position: absolute
+      top: 70px
+      left: 100%
+      transform: translateX(-100%)
+      z-index: 3
+      padding: 14px 70px 14px 31px
+      h3 
+         font-size: 18px
+         color: $gold
+         +bold
+   &-items
+      display: flex
+      flex-direction: column
+      line-height: 1.5
+      div img
+         height: 22px
+         vertical-align: bottom
+   &__link
+      text-decoration: none
+      color: #ffffff
+      display: inline-block
+   &_link-light
+      &:hover
+         color: #d8cbcb
+   &-tel
+      padding-bottom: 20px
+      padding-top: 10px
+   &__tel 
+      padding-left: 6px
+   &__address 
+      padding-left: 15px
+   &-address
+      padding-bottom: 40px
+   &-bottom
+      background: url('../images/contacts-bottom.png') center top/cover no-repeat #000000
+   &__container
+      position: relative
+      bottom: 600px
+
+.contacts-bottom
+   .order-block
+      z-index: 3
+      background: url('../images/asphalt_auto_automobiles.png') right top -70px /80% 200% no-repeat #000000
+      bottom: 128px
+      align-items: flex-start
+      &__consult-text
+         max-width: 85%
+         margin-top: 0
+         margin-bottom: 30px
+      &__group
+         display: flex
+         height: 100%
+         flex-direction: column
+         justify-content: center
+         padding-left: 80px
+
++tablet 
+   .contacts
+       &-block
+          top: 220px
+          width: 300px
+          padding-right: 31px
+   .contacts-bottom 
+      .order-block
+         &__group
+            width: 60%
+            padding-left: 20px
+
++phone-lg
+   .contacts
+      &-block
+         font-size: 14px
+         left: calc(100% + 40px)
+         height: 220px
+         padding-right: 45px
+         h3 
+            font-size: 16px
+      &-address
+         padding-bottom: 15px
+      &-bottom 
+         .order-block
+            &__group
+               width: 80%
+         
++phone-m
+   .contacts
+      &-block
+         padding: 5px 20px 5px 20px
+         top: 310px
+         height: 180px
+         width: calc(100% - 30px)
+         left: calc(100% - 15px)
+      &-tel
+         padding-top: 0
+         padding-bottom: 15px
+      &-bottom 
+         .order-block
+            height: 320px
+            padding-top: 30px
+            &__group
+               width: 100%
+               height: auto
+               h3 
+                  font-size: 22px
+
++phone-sm
+   .contacts-bottom 
+      .order-block
+         height: 360px
+
+
+
+
+
+ 

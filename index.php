@@ -180,53 +180,55 @@
       </div>
     </div>
     <div class="tariff-scale">
-      <h2>ТАРИФНАЯ СЕТКА НА УСЛУГИ</h2>
-      <div class="rate">
-        <h3>Максимальный</h3>
-        <div class="rate-body">
-          <strong>$ 1000</strong>
-          <p>Заказывая данный пакет услуг вы получаете такие возможности:</p>
-          <ol>
-            <li>Анализ внутреннего авторынка Украины и США.</li>
-            <li>Индивидуальный подбор авто на аукционах США.</li>
-            <li>
-              Предварительную смету цены авто на номерах в Украине, детально
-              прописанную по пунктах.
-            </li>
-            <li>Возможность следить за торгами на аукционах.</li>
-            <li>Максимальная скидка на аукционный сбор.</li>
-            <li>
-              Опытные логистические компании и качественные услуги упаковки
-              авто в контейнер.
-            </li>
-            <li>
-              Доступ в личный кабинет покупателя с помощью, которого
-              вам будет
-              понятно и легко с нами взаимодействовать.
-            </li>
-            <li>Прозрачная система оплаты.</li>
-            <li>Подбор автозапчастей.</li>
-            <li>Услуги по ремонту авто.</li>
-            <li>Прохождение сертификации.</li>
-          </ol>
-          <a href="#" class="rate-order">Заказать</a>
+      <div class="container">
+        <h2>ТАРИФНАЯ СЕТКА НА УСЛУГИ</h2>
+        <div class="rate">
+          <h3>Максимальный</h3>
+          <div class="rate-body">
+            <strong>$ 1000</strong>
+            <p>Заказывая данный пакет услуг вы получаете такие возможности:</p>
+            <ol>
+              <li>Анализ внутреннего авторынка Украины и США.</li>
+              <li>Индивидуальный подбор авто на аукционах США.</li>
+              <li>
+                Предварительную смету цены авто на номерах в Украине, детально
+                прописанную по пунктах.
+              </li>
+              <li>Возможность следить за торгами на аукционах.</li>
+              <li>Максимальная скидка на аукционный сбор.</li>
+              <li>
+                Опытные логистические компании и качественные услуги упаковки
+                авто в контейнер.
+              </li>
+              <li>
+                Доступ в личный кабинет покупателя с помощью, которого
+                вам будет
+                понятно и легко с нами взаимодействовать.
+              </li>
+              <li>Прозрачная система оплаты.</li>
+              <li>Подбор автозапчастей.</li>
+              <li>Услуги по ремонту авто.</li>
+              <li>Прохождение сертификации.</li>
+            </ol>
+            <a href="#" class="rate-order">Заказать</a>
+          </div>
         </div>
-      </div>
-      <div class="rate">
-        <h3>Двойной</h3>
-        <div class="rate-body">
-          <strong>$ 500</strong>
-          <p>
-            Заказав сразу несколько автомобилей вы получаете скидку 50% на
-            пакет Максимальный.
-          </p>
-          <a href="#" class="rate-order">Заказать</a>
+        <div class="rate">
+          <h3>Двойной</h3>
+          <div class="rate-body">
+            <strong>$ 500</strong>
+            <p>
+              Заказав сразу несколько автомобилей вы получаете скидку 50% на
+              пакет Максимальный.
+            </p>
+            <a href="#" class="rate-order">Заказать</a>
+          </div>
         </div>
-      </div>
-      <div class="rate">
-        <h3>Партнерский</h3>
-        <div class="rate-body">
-          <a href="#" class="rate-order">Заказать</a>
+        <div class="rate">
+          <h3>Партнерский</h3>
+          <div class="rate-body">
+            <a href="#" class="rate-order">Заказать</a>
+          </div>
         </div>
       </div>
     </div>
@@ -245,12 +247,43 @@
     </div>
     <div class="contacts">
       <h2>КОНТАКТЫ</h2>
-    </div>
-    <div class="order-block" id="bottom-order">
-      <h3>Закажите обратный звонок</h3>
-      <p>
-        Начните работу с нами и уже через 30-40 дней получите ваше авто из США
-      </p>
+      <!--The div element for the map -->
+      <div id="map">
+      </div>
+      <div class="container contacts__container">
+        <div class="contacts-block">
+          <h3>Наши контакты</h3>
+          <div class="contacts-items">
+            <div class="contacts-tel">
+              <a href="tel:+380970770975" class="contacts__link contacts_link-light">
+                <img src="/icons/menu_icons/telephone.svg" alt="telephone icon" class="contacts_tel-img" />
+                <span class="contacts__tel">+38 (097) 077 09 75</span>
+            </div>
+            <div class="contacts-address">
+              <a href="https://goo.gl/maps/5pjgVMF2cArS1PiRA" class="contacts__link contacts_link-light">
+                <img src="../images/marker.png" alt="marker icon"><span class="contacts__address">м. Київ, вул. Сверстюка 19,
+                  10 поверх, офіс 13</span></a></div>
+          </div>
+          <div class="contacts-social">
+            <?php include 'sections_include/svg_social_icons.php'; ?>
+          </div>
+        </div>
+      </div>
+      <div class="contacts-bottom">
+        <div class="container">
+          <div class="order-block" id="bottom-order">
+            <div class="order-block__group">
+              <h3>Закажите обратный звонок</h3>
+              <p class="order-block__consult-text">
+                Начните работу с нами и уже через 30-40 дней получите ваше авто из США</p>
+              <form action="#" class="form consult__form">
+                <input type="tel" class="input form__order-tel" name="tel_order" placeholder="+38 (0__) ___ __ __" />
+                <input type="submit" class="button form__order-call" value="Заказать" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </main>
   <footer class="footer">
@@ -288,6 +321,9 @@
   <script src="js/jquery.maskedinput.min.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/google_map.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCLRztqwLiL4BxTlvoHO8PBcIx_1Yo7YaA&callback=initMap">
+  </script>
 </body>
 
 </html>
