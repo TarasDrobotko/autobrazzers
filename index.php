@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta rel="nofollow" />
   <title>AUTOBRAZZERS</title>
   <link rel="stylesheet" href="css/style.css" type="text/css" />
 </head>
@@ -237,13 +238,40 @@
     </div>
     <div class="reviews">
       <h2>ОТЗЫВЫ</h2>
-      <h3>Ричард Ройтман</h3>
-      <p>
-        Excepteur sint occaecat cupidatat non proident, sunt insides culpa qui
-        officia deserunt mollit anim id eston laborum. Sed ut perspiciatis
-        unde omnis iste natus error sitire voluptatem accusant doloremque
-        laudantium, totamie rem aperiam, eaque ipsa quae.
-      </p>
+      <div class="container">
+        <div class="reviews-items">
+          <div class="reviews-item">
+            <h3>Ричард Ройтман</h3>
+            <p class="reviews-item__text">
+              Excepteur sint occaecat cupidatat non proident, sunt insides culpa qui
+              officia deserunt mollit anim id eston laborum. Sed ut perspiciatis
+              unde omnis iste natus error sitire voluptatem accusant doloremque
+              laudantium, totamie rem aperiam, eaque ipsa quae.
+            </p>
+            <img src='/images/‘‘.png' alt="Лапки цитаты" class="reviews-item__img">
+          </div>
+          <div class=" reviews-item">
+            <h3>Ричард Ройтман</h3>
+            <p class="reviews-item__text">
+              Excepteur sint occaecat cupidatat non proident, sunt insides culpa qui
+              officia deserunt mollit anim id eston laborum. Sed ut perspiciatis
+              unde omnis iste natus error sitire voluptatem accusant doloremque
+              laudantium, totamie rem aperiam, eaque ipsa quae.
+            </p>
+            <img src='/images/‘‘.png' alt="Лапки цитаты" class="reviews-item__img">
+          </div>
+          <div class="reviews-item">
+            <h3>Ричард Ройтман</h3>
+            <p class="reviews-item__text">
+              Excepteur sint occaecat cupidatat non proident, sunt insides culpa qui
+              officia deserunt mollit anim id eston laborum. Sed ut perspiciatis
+              unde omnis iste natus error sitire voluptatem accusant doloremque
+              laudantium, totamie rem aperiam, eaque ipsa quae.
+            </p>
+            <img src='/images/‘‘.png' alt="Лапки цитаты" class="reviews-item__img">
+          </div>
+        </div>
+      </div>
     </div>
     <div class="contacts">
       <h2>КОНТАКТЫ</h2>
@@ -322,7 +350,7 @@
   <script src="js/slick.min.js"></script>
   <script src="js/main.js"></script>
   <script src="js/google_map.js"></script>
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCLRztqwLiL4BxTlvoHO8PBcIx_1Yo7YaA&callback=initMap">
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=my_key&callback=initMap">
   </script>
 </body>
 
