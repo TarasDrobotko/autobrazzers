@@ -1,0 +1,67 @@
+.reviews
+    background: url('/images/action_adult_car.png') no-repeat bottom -60px center #000
+    h2 
+        padding-top: 44px
+        margin-bottom: 62px
+    &-items
+        display: flex
+        padding-bottom: 159px
+    &-item
+        height: 400px!important
+        border-radius: 10px
+        background-color: #1c1c1c
+        padding: 28px 48px 30px 49px
+        position: relative
+        z-index: 2
+        h3 
+            color: #ffffff
+            +bold 
+            font-size: 20px
+            text-align: center
+            margin-top: -58px
+        &__img
+            position: absolute
+            bottom: 30px
+            right: 48px
+        &__text
+            color: #ffffff
+            line-height: 1.71
+            font-size: 14px
+            opacity: 0.6
+        &__circle-dark
+            position: relative
+            width: 120px
+            height: 120px
+            border-radius: 50%
+            background:#010101
+            overflow: hidden
+            top: -87px
+            +center-position
+        &__circle
+            width: 104px
+            height: 104px
+            border-radius: 50%
+            background:#def5e5
+            position: relative
+            top: 8px
+            +center-position
+        &__profile-img
+            position: absolute
+            top: 10px
+            +center-position
+
++tablet 
+    .reviews
+        &-items
+            max-width: 730px
+            margin: auto
+
++phone-lg
+    .reviews
+        &-items
+            max-width: 350px
+            margin: auto
+
+
+                
+

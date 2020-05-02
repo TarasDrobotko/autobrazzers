@@ -4,9 +4,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta rel="nofollow" />
   <title>AUTOBRAZZERS</title>
   <link rel="stylesheet" href="css/style.css" type="text/css" />
+  <link rel="stylesheet" href="css/slick.css" type="text/css" />
+  <link rel="stylesheet" href="css/slick-theme.css" type="text/css" />
 </head>
 
 <body>
@@ -241,32 +242,92 @@
       <div class="container">
         <div class="reviews-items">
           <div class="reviews-item">
+            <div class="reviews-item__circle-dark">
+              <div class="reviews-item__circle">
+                <img src="/images/roitman.png" alt="Ричард Ройтман" class="reviews-item__profile-img">
+              </div>
+            </div>
             <h3>Ричард Ройтман</h3>
             <p class="reviews-item__text">
               Excepteur sint occaecat cupidatat non proident, sunt insides culpa qui
               officia deserunt mollit anim id eston laborum. Sed ut perspiciatis
               unde omnis iste natus error sitire voluptatem accusant doloremque
-              laudantium, totamie rem aperiam, eaque ipsa quae.
-            </p>
-            <img src='/images/‘‘.png' alt="Лапки цитаты" class="reviews-item__img">
-          </div>
-          <div class=" reviews-item">
-            <h3>Ричард Ройтман</h3>
-            <p class="reviews-item__text">
-              Excepteur sint occaecat cupidatat non proident, sunt insides culpa qui
-              officia deserunt mollit anim id eston laborum. Sed ut perspiciatis
-              unde omnis iste natus error sitire voluptatem accusant doloremque
-              laudantium, totamie rem aperiam, eaque ipsa quae.
+              laudantium, totamie rem aperiam.
             </p>
             <img src='/images/‘‘.png' alt="Лапки цитаты" class="reviews-item__img">
           </div>
           <div class="reviews-item">
+            <div class="reviews-item__circle-dark">
+              <div class="reviews-item__circle">
+                <img src="/images/roitman.png" alt="Ричард Ройтман" class="reviews-item__profile-img">
+              </div>
+            </div>
             <h3>Ричард Ройтман</h3>
             <p class="reviews-item__text">
               Excepteur sint occaecat cupidatat non proident, sunt insides culpa qui
               officia deserunt mollit anim id eston laborum. Sed ut perspiciatis
               unde omnis iste natus error sitire voluptatem accusant doloremque
-              laudantium, totamie rem aperiam, eaque ipsa quae.
+              laudantium, totamie rem aperiam.
+            </p>
+            <img src='/images/‘‘.png' alt="Лапки цитаты" class="reviews-item__img">
+          </div>
+          <div class="reviews-item">
+            <div class="reviews-item__circle-dark">
+              <div class="reviews-item__circle">
+                <img src="/images/roitman.png" alt="Ричард Ройтман" class="reviews-item__profile-img">
+              </div>
+            </div>
+            <h3>Ричард Ройтман</h3>
+            <p class="reviews-item__text">
+              Excepteur sint occaecat cupidatat non proident, sunt insides culpa qui
+              officia deserunt mollit anim id eston laborum. Sed ut perspiciatis
+              unde omnis iste natus error sitire voluptatem accusant doloremque
+              laudantium, totamie rem aperiam.
+            </p>
+            <img src='/images/‘‘.png' alt="Лапки цитаты" class="reviews-item__img">
+          </div>
+          <div class="reviews-item">
+            <div class="reviews-item__circle-dark">
+              <div class="reviews-item__circle">
+                <img src="/images/roitman.png" alt="Ричард Ройтман" class="reviews-item__profile-img">
+              </div>
+            </div>
+            <h3>Ричард Ройтман</h3>
+            <p class="reviews-item__text">
+              Excepteur sint occaecat cupidatat non proident, sunt insides culpa qui
+              officia deserunt mollit anim id eston laborum. Sed ut perspiciatis
+              unde omnis iste natus error sitire voluptatem accusant doloremque
+              laudantium, totamie rem aperiam.
+            </p>
+            <img src='/images/‘‘.png' alt="Лапки цитаты" class="reviews-item__img">
+          </div>
+          <div class="reviews-item">
+            <div class="reviews-item__circle-dark">
+              <div class="reviews-item__circle">
+                <img src="/images/roitman.png" alt="Ричард Ройтман" class="reviews-item__profile-img">
+              </div>
+            </div>
+            <h3>Ричард Ройтман</h3>
+            <p class="reviews-item__text">
+              Excepteur sint occaecat cupidatat non proident, sunt insides culpa qui
+              officia deserunt mollit anim id eston laborum. Sed ut perspiciatis
+              unde omnis iste natus error sitire voluptatem accusant doloremque
+              laudantium, totamie rem aperiam.
+            </p>
+            <img src='/images/‘‘.png' alt="Лапки цитаты" class="reviews-item__img">
+          </div>
+          <div class="reviews-item">
+            <div class="reviews-item__circle-dark">
+              <div class="reviews-item__circle">
+                <img src="/images/roitman.png" alt="Ричард Ройтман" class="reviews-item__profile-img">
+              </div>
+            </div>
+            <h3>Ричард Ройтман</h3>
+            <p class="reviews-item__text">
+              Excepteur sint occaecat cupidatat non proident, sunt insides culpa qui
+              officia deserunt mollit anim id eston laborum. Sed ut perspiciatis
+              unde omnis iste natus error sitire voluptatem accusant doloremque
+              laudantium, totamie rem aperiam.
             </p>
             <img src='/images/‘‘.png' alt="Лапки цитаты" class="reviews-item__img">
           </div>
@@ -347,10 +408,10 @@
 
   <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
   <script src="js/jquery.maskedinput.min.js"></script>
-  <script src="js/slick.min.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/slick.min.js"></script>
   <script src="js/google_map.js"></script>
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=my_key&callback=initMap">
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap">
   </script>
 </body>
 
