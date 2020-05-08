@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="css/style.css" type="text/css" />
   <link rel="stylesheet" href="css/slick.css" type="text/css" />
   <link rel="stylesheet" href="css/slick-theme.css" type="text/css" />
+  <link rel="stylesheet" href="css/ion.rangeSlider.css" type="text/css" />
+  <link rel="stylesheet" href="css/select2.min.css" type="text/css" />
 </head>
 
 <body>
@@ -61,7 +63,7 @@
 
               </a>
             </li>
-            <li><a class="button button__login-link main-menu__link main-menu_link-light" href="#">Войти
+            <li><a class="button__login-link main-menu__link main-menu_link-light" href="#">Войти
                 <img src="/icons/menu_icons/locked.svg" alt="Login icon" class="button__login-img" />
               </a></li>
           </ul>
@@ -235,7 +237,109 @@
       </div>
     </div>
     <div class="selection-cars">
-      <h2>ПОДБОР АВТО ИЗ США</h2>
+      <div class="container">
+        <h2>ПОДБОР АВТО ИЗ США</h2>
+        <div class="cars">
+          <div class="cars-item">
+            <div class="cars-item__switch"><img src="/images/switch.png" alt="Значок переключателя"></div>
+            <img src="/images/moto.png" alt="Мотоцикл" class="cars-item__img">
+            <div class="cars-item__floor"></div>
+            <div class="cars-item__descr">
+              <strong>
+                Мото
+              </strong>
+            </div>
+          </div>
+          <div class="cars-item">
+            <div class="cars-item__switch"><img src="/images/switch.png" alt="Значок переключателя"></div>
+            <img src="/images/snowflake.png" alt="Седан" class="cars-item__img">
+            <div class="cars-item__floor" id="car-id"></div>
+            <div class="cars-item__descr">
+              <strong>
+                Седан
+              </strong>
+            </div>
+          </div>
+          <div class="cars-item">
+            <div class="cars-item__switch"><img src="/images/switch.png" alt="Значок переключателя"></div>
+            <img src="/images/luxury_white_pearl.png" alt="Купе" class="cars-item__img">
+            <div class="cars-item__floor"></div>
+            <div class="cars-item__descr">
+              <strong>
+                Купе
+              </strong>
+            </div>
+          </div>
+          <div class="cars-item">
+            <div class="cars-item__switch"><img src="/images/switch.png" alt="Значок переключателя"></div>
+            <img src="/images/tesla_branding_123.png" alt="Электрокар" class="cars-item__img">
+            <div class="cars-item__floor"></div>
+            <div class="cars-item__descr">
+              <strong>
+                Электрокар
+              </strong>
+            </div>
+          </div>
+          <div class="cars-item">
+            <div class="cars-item__switch"><img src="/images/switch.png" alt="Значок переключателя"></div>
+            <img src="/images/suv.png" alt="Внедорожник" class="cars-item__img">
+            <div class="cars-item__floor"></div>
+            <div class="cars-item__descr">
+              <strong>
+                Внедорожник
+              </strong>
+            </div>
+          </div>
+          <div class="cars-item">
+            <div class="cars-item__switch"><img src="/images/switch.png" alt="Значок переключателя"></div>
+            <img src="/images/picap.png" alt="Пикап" class="cars-item__img">
+            <div class="cars-item__floor"></div>
+            <div class="cars-item__descr">
+              <strong>
+                Пикап
+              </strong>
+            </div>
+          </div>
+          <div class="cars-item">
+            <div class="cars-item__switch"><img src="/images/switch.png" alt="Значок переключателя"></div>
+            <img src="/images/miniven.png" alt="Минивэн" class="cars-item__img">
+            <div class="cars-item__floor"></div>
+            <div class="cars-item__descr">
+              <strong>
+                Минивэн
+              </strong>
+            </div>
+          </div>
+          <div class="cars-item">
+            <div class="cars-item__switch"><img src="/images/switch.png" alt="Значок переключателя"></div>
+            <img src="/images/sprinter_worker.png" alt="Mercedes-Benz Sprinter Worker" class="cars-item__img">
+            <div class="cars-item__floor"></div>
+            <div class="cars-item__descr">
+              <strong>
+                Бус
+              </strong>
+            </div>
+          </div>
+        </div>
+        <div class="order-by-year">
+          <form action="" class="order-by-year__form">
+            <input type="hidden" name="car_type" value="" class="order-by-year__hidden-input" />
+            <input type="tel" class="input order-by-year__order-tel" name="tel_order" placeholder="+38 (0__) ___ __ __" id="order-by-year__order-tel" />
+            <select class="price-select" id="price-select-id" name="selected_price">
+              <option value="8000-10000">(8000$-10000$)</option>
+              <option value="10000-13000">(10000$-13000$)</option>
+              <option value="13000-17000">(13000$-17000$)</option>
+            </select>
+            <div class="order-by-year__range-group">
+              <div class="order-by-year__range-title">
+                <span>Год:</span> (2000-2019)
+              </div>
+              <input type="range" min="2000" max="2019" step="1" value="2005" class="order-by-year__range">
+            </div>
+            <div class="order-by-year_break"></div>
+            <input type="submit" class="button order-by-year__order-call" value="Заказать" />
+        </div>
+      </div>
     </div>
     <div class="reviews">
       <h2>ОТЗЫВЫ</h2>
@@ -406,12 +510,14 @@
     </div>
   </footer>
 
-  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="js/ion.rangeSlider.min.js"></script>
   <script src="js/jquery.maskedinput.min.js"></script>
   <script src="js/main.js"></script>
   <script src="js/slick.min.js"></script>
+  <script src="js/select2.min.js"></script>
   <script src="js/google_map.js"></script>
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap">
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCLRztqwLiL4BxTlvoHO8PBcIx_1Yo7YaA&callback=initMap">
   </script>
 </body>
 

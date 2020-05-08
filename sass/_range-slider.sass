@@ -1,0 +1,26 @@
+.irs
+    &.irs--flat 
+        width: 256px
+        margin-right: 45px
+        margin-left: 26px
+        .irs-line, .irs-bar
+            height: 3px
+            background-color: $gold
+        .irs-handle > i:first-child
+            background-color: #000000
+            width: 11px
+            height: 11px
+            border: 3px solid #ffffff
+            border-radius: 50%
+            cursor: pointer
+        .irs-handle
+            width: auto
+        .irs-handle:hover > i:first-child, .irs-handle.state_hover > i:first-child 
+            background-color: #575656
+        .irs-single
+           background-color: transparent
+           font-size: 14px
+           color: $gold
+           top: 35px
+        .irs-single::before
+           display: none
