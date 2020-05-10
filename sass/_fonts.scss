@@ -11,6 +11,19 @@
     url("/css/fonts/slick.svg#slick") format("svg");
 }
 
+/* Raleway */
+@font-face {
+  font-family: "Raleway Bold";
+  font-display: swap;
+  src: url("../fonts/raleway/Raleway-Bold.eot");
+  src: url("../fonts/raleway/Raleway-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/raleway/Raleway-Bold.woff") format("woff"),
+    url("../fonts/raleway/Raleway-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* Open Sans */
 @font-face {
   font-family: "Open Sans Regular";
@@ -57,4 +70,8 @@
 
 @mixin light {
   font-family: "Open Sans Light", sans-serif;
+}
+
+@mixin bold-raleway {
+  font-family: "Raleway Bold", sans-serif;
 }

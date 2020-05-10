@@ -1,0 +1,172 @@
+.rate
+    background: url('/images/auto_devices.png') no-repeat center bottom -45px /cover #000000
+    height: 959px
+    padding-top: 69px
+    &-wrapper
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+    &-item
+        width: calc(33.33% - 15px)
+        height: 268px
+        border-radius: 10px
+        background-color: $gold
+        text-align: center
+        &:first-child .rate-item__panel
+            margin-left: 10px   
+        &_item-height
+            min-height: 100%
+        h3 
+            +bold 
+            font-size: 20px
+            margin-bottom: 23px
+        &__body
+            position: relative
+            background-color: #fff
+            border-bottom-left-radius: 10px
+            border-bottom-right-radius: 10px
+            border: 
+                left: solid 4px $gold
+                right: solid 4px $gold
+                bottom: solid 4px $gold
+        &__price
+            height: 69px
+            width: 100%
+            background-color: #ffffff
+            border-bottom: 1px solid rgba(#000, 0.2)
+            strong
+                font-size: 22px
+                line-height: 3.2
+                +bold
+                &.rate-item__dollars
+                    font-size: 36px
+                    line-height: 2
+                & sup
+                    font-size: 18px
+                    top: -0.75em
+        &__btn
+            display: inline-block
+            text-decoration: none
+            background-color: $gold
+            color: #000000
+            +bold 
+            line-height: 50px 
+            box-shadow: 1.4px 1.4px 4px 0 rgba(0, 0, 0, 0.3)
+            &:hover
+               background-color: $gold-dark 
+        &_btn-padding
+            padding-top: 24px
+        &__btn-wrap
+            background-color: #ffffff
+            padding-top: 35px
+            padding-bottom: 40px
+            border-bottom-left-radius: 10px
+            border-bottom-right-radius: 10px
+        &_btn-wrap
+            padding-top: 13px
+        &__slide-show
+            position: absolute
+            width: 40px
+            height: 40px
+            left: calc(100% - 63px)
+            cursor: pointer
+        &__check-block
+            position: relative
+            width: 35px
+            height: 17.5px
+            background: $gold
+            margin-left: 2.5px
+            &::before
+                +pseudo
+                background: url("/icons/rate_icons/chevron-down.svg") bottom  center / contain no-repeat
+                height: 22px
+                width: 22px
+                top: 2px
+                +center-position
+            &_open::before
+                transform: rotate(180deg) translateX(50%)
+                
+        &__semicircle
+            border-radius: 0 0 50% 50% / 0 0 100% 100%
+            width: 37px
+            height: 19.5px
+            background: $gold
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.28)
+            border: 
+                left: solid 2px #ffffff
+                right: solid 2px #ffffff
+                bottom: solid 2px #ffffff
+            margin-left: 1.5px
+        &__panel
+            +bold-raleway
+            font-size: 16px
+            margin: 37px 20px 0 20px
+            display: none
+            line-height: 22px
+            &-offer 
+                margin-bottom: -5px
+        &__capabilities
+            list-style-type: none
+            counter-reset: num
+            padding-left: 0
+            margin-right: 15px
+            &-intro
+                font-size: 15px
+                line-height: 1.4
+                margin-bottom: 5px
+            li  
+                +regular
+                font-size: 13px
+                line-height: 1.5
+                padding-bottom: 15px
+                &:last-child
+                    padding-bottom: 5px
+                span 
+                    display: inline-block
+                    width: calc(100% - 35px)
+                    text-align: center
+                    margin-left: 10px
+            li::before 
+                position: relative
+                display: inline-block
+                float: left
+                
+                +bold 
+                font-size: 12px
+                content: counter(num)
+                counter-increment: num
+                width: 22px
+                height: 22px
+                border-radius: 50%
+                color: #000000
+                background-color: $gold
+
+
++tablet
+    .rate-item
+        width: calc(50% - 15px)
+        &:first-child
+            z-index: 2
+        &:last-child
+            margin: 30px auto 0 auto
+            z-index: 0
+        &:nth-last-child(2)
+               z-index: 1
+
++phone-lg
+    .rate
+        &-wrapper
+           flex-direction: column
+           align-items: center
+        &-item
+           width: 80%
+           &:first-child
+               margin-bottom: 30px
+
++phone-m
+     .rate
+        &-item
+           width: 100%
+
+
+              

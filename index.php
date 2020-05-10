@@ -183,55 +183,85 @@
         <span>Ваше авто готово</span>
       </div>
     </div>
-    <div class="tariff-scale">
+    <div class="rate">
       <div class="container">
         <h2>ТАРИФНАЯ СЕТКА НА УСЛУГИ</h2>
-        <div class="rate">
-          <h3>Максимальный</h3>
-          <div class="rate-body">
-            <strong>$ 1000</strong>
-            <p>Заказывая данный пакет услуг вы получаете такие возможности:</p>
-            <ol>
-              <li>Анализ внутреннего авторынка Украины и США.</li>
-              <li>Индивидуальный подбор авто на аукционах США.</li>
-              <li>
-                Предварительную смету цены авто на номерах в Украине, детально
-                прописанную по пунктах.
-              </li>
-              <li>Возможность следить за торгами на аукционах.</li>
-              <li>Максимальная скидка на аукционный сбор.</li>
-              <li>
-                Опытные логистические компании и качественные услуги упаковки
-                авто в контейнер.
-              </li>
-              <li>
-                Доступ в личный кабинет покупателя с помощью, которого
-                вам будет
-                понятно и легко с нами взаимодействовать.
-              </li>
-              <li>Прозрачная система оплаты.</li>
-              <li>Подбор автозапчастей.</li>
-              <li>Услуги по ремонту авто.</li>
-              <li>Прохождение сертификации.</li>
-            </ol>
-            <a href="#" class="rate-order">Заказать</a>
+        <div class="rate-wrapper">
+          <div class="rate-item">
+            <h3>Максимальный</h3>
+            <div class="rate-item__body">
+              <div class="rate-item__price">
+                <strong class="rate-item__dollars"><sup>$</sup> 1000</strong>
+              </div>
+              <div class="rate-item__slide-show">
+                <div class="rate-item__check-block"></div>
+                <div class="rate-item__semicircle"></div>
+              </div>
+              <div class="rate-item__panel">
+                <p class="rate-item__capabilities-intro">Заказывая данный пакет услуг<br> вы получаете такие возможности:</p>
+                <ol class="rate-item__capabilities">
+                  <li><span>Анализ внутреннего авторынка Украины и США.</span></li>
+                  <li><span>Индивидуальный подбор авто на аукционах США.</span></li>
+                  <li>
+                    <span>Предварительную смету цены авто на номерах в Украине, детально
+                      прописанную по пунктах.</span>
+                  </li>
+                  <li><span>Возможность следить за торгами на аукционах.</span></li>
+                  <li><span>Максимальная скидка на аукционный сбор.</span></li>
+                  <li>
+                    <span>Опытные логистические компании и качественные услуги упаковки
+                      авто в контейнер.</span>
+                  </li>
+                  <li>
+                    <span>Доступ в личный кабинет покупателя с помощью, которого
+                      вам будет
+                      понятно и легко с нами взаимодействовать.</span>
+                  </li>
+                  <li><span>Прозрачная система оплаты.</span></li>
+                  <li><span>Подбор автозапчастей.</span></li>
+                  <li><span>Услуги по ремонту авто.</span></li>
+                  <li><span>Прохождение сертификации.</span></li>
+                </ol>
+              </div>
+              <div class="rate-item__btn-wrap">
+                <a href="#" class="button rate-item__btn">Заказать</a>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="rate">
-          <h3>Двойной</h3>
-          <div class="rate-body">
-            <strong>$ 500</strong>
-            <p>
-              Заказав сразу несколько автомобилей вы получаете скидку 50% на
-              пакет Максимальный.
-            </p>
-            <a href="#" class="rate-order">Заказать</a>
+          <div class="rate-item">
+            <h3>Двойной</h3>
+            <div class="rate-item__body">
+              <div class="rate-item__price">
+                <strong class="rate-item__dollars"><sup>$</sup> 500</strong>
+              </div>
+              <div class="rate-item__slide-show" id="slide-show">
+                <div class="rate-item__check-block"></div>
+                <div class="rate-item__semicircle"></div>
+              </div>
+              <div class="rate-item__panel">
+                <p class="rate-item__panel-offer">
+                  Заказав сразу несколько<br> автомобилей вы получаете скидку 50%<br> на
+                  пакет Максимальный.</p>
+              </div>
+              <div class="rate-item__btn-wrap">
+                <a href="#" class="button rate-item__btn">Заказать</a>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="rate">
-          <h3>Партнерский</h3>
-          <div class="rate-body">
-            <a href="#" class="rate-order">Заказать</a>
+          <div class="rate-item">
+            <h3>Партнерский</h3>
+            <div class="rate-item__body">
+              <div class="rate-item__price">
+                <strong>Цена индивидуально</strong>
+              </div>
+              <div class="rate-item__slide-show">
+                <div class="rate-item__check-block"></div>
+                <div class="rate-item__semicircle"></div>
+              </div>
+              <div class="rate-item__btn-wrap">
+                <a href="#" class=" button rate-item__btn">Заказать</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>

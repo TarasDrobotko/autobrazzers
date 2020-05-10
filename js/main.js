@@ -106,33 +106,42 @@ $(document).ready(function ($) {
       },
     ],
   });
-});
 
-/* car lighting */
-function toggleLighting($item, $switch, $floor) {
-  $item.toggleClass("cars-item_lighting-bg");
-  $switch.toggleClass("cars-item__switch_on");
-  $floor.toggleClass("cars-item__floor_yellow");
-}
+  /* car lighting */
+  function toggleLighting($item, $switch, $floor) {
+    $item.toggleClass("cars-item_lighting-bg");
+    $switch.toggleClass("cars-item__switch_on");
+    $floor.toggleClass("cars-item__floor_yellow");
+  }
 
-$(".cars-item").on("click", function (event) {
-  var clickedElement = $(event.target);
-  var $item = clickedElement.closest(".cars-item");
-  var $switch = $item.find(".cars-item__switch");
-  var $floor = $item.find(".cars-item__floor");
-
-  toggleLighting($item, $switch, $floor);
-
-  if ($(".cars-item__floor").hasClass("cars-item__floor_yellow")) {
-    $(".cars-item__floor").removeClass("cars-item__floor_yellow");
-    $(".cars-item__switch").removeClass("cars-item__switch_on");
-    $(".cars-item").removeClass("cars-item_lighting-bg");
-    // write value in hidden input
-    var val = $item.find(".cars-item__descr>strong").text();
-    $(".order-by-year__hidden-input").val(val);
+  $(".cars-item").on("click", function (event) {
+    var clickedElement = $(event.target);
+    var $item = clickedElement.closest(".cars-item");
+    var $switch = $item.find(".cars-item__switch");
+    var $floor = $item.find(".cars-item__floor");
 
     toggleLighting($item, $switch, $floor);
-  } else {
-    $(".order-by-year__hidden-input").val("");
-  }
+
+    if ($(".cars-item__floor").hasClass("cars-item__floor_yellow")) {
+      $(".cars-item__floor").removeClass("cars-item__floor_yellow");
+      $(".cars-item__switch").removeClass("cars-item__switch_on");
+      $(".cars-item").removeClass("cars-item_lighting-bg");
+      // write value in hidden input
+      var val = $item.find(".cars-item__descr>strong").text();
+      $(".order-by-year__hidden-input").val(val);
+
+      toggleLighting($item, $switch, $floor);
+    } else {
+      $(".order-by-year__hidden-input").val("");
+    }
+  });
+
+  /* rate slides toggle */
+  $(".rate-item__slide-show").on("click", function () {
+    $(this)
+      .find(".rate-item__check-block")
+      .toggleClass("rate-item__check-block_open");
+    $(this).parent().parent().toggleClass("rate-item_item-height");
+    $(this).parent().find(".rate-item__panel").slideToggle(1500);
+  });
 });
