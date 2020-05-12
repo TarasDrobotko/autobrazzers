@@ -1,0 +1,105 @@
+.sequence-work
+    background: url('/images/sequence-work-bg.png') no-repeat left -170px bottom -185px /140% 125% #000000
+    h2 
+        padding-top: 75px
+        margin-top: 0
+    &-wrap
+        display: flex
+        flex-wrap: wrap
+        counter-reset: counter-item
+    &__item
+        position: relative
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        width: 25%
+        color: $gold
+        +bold 
+        font-size: 18px
+        height: 260px
+        border: 1px solid rgba(#ffffff,.4)
+        border-top-width: 0
+        border-right-width: 0
+        &::before
+            +pseudo
+            color: #ffffff
+            opacity: 0.03
+            font-size: 200px
+            +bold 
+            counter-increment: counter-item
+            content: counter(counter-item)
+            bottom: 0
+            left: 50%
+            transform: translateX(-40%)
+        &:nth-last-child(5)
+            border-top-width: 1px
+        &:nth-last-child(9)
+            border-bottom-width: 0
+        &:nth-last-child(9), &:nth-last-child(10), &:nth-last-child(11), &:nth-last-child(12)
+            border-image: linear-gradient(to top, rgba(#ffffff,.4) 70%, rgba(#ffffff,0)) 1
+        &:nth-last-child(1), &:nth-last-child(2), &:nth-last-child(3), &:nth-last-child(4)
+            border-image: linear-gradient(to bottom, rgba(#ffffff,.4) 70%, rgba(#ffffff,0)) 1
+        &:nth-last-child(4), &:nth-last-child(8), &:nth-last-child(12)
+            border-image: linear-gradient(to left, rgba(#ffffff,.4) 70%, rgba(#ffffff,0)) 1
+        &:nth-last-child(5)
+            border-image: linear-gradient(to right, rgba(#ffffff,.4) 70%, rgba(#ffffff,0)) 1
+        img  
+            max-height: 100px
+            max-width: 105px
+            margin-top: -15px
+        &:nth-last-child(8) img
+            width: 38px
+        &:nth-last-child(6) img
+            width: 89px
+        &:nth-last-child(5) img
+            max-width: 120px
+        &:nth-last-child(2) img
+            width: 78px
+        &:nth-last-child(1) img
+            width: 74px
+        &:nth-last-child(1), &:nth-last-child(2), &:nth-last-child(3)
+            &::before 
+                transform: translateX(-50%)
+        &:nth-last-child(1), &:nth-last-child(2), &:nth-last-child(3), &:nth-last-child(4)
+            border-bottom-width: 0
+        &:nth-last-child(12), &:nth-last-child(8), &:nth-last-child(4)
+            border-left-width: 0
+    &__item-title
+        position: absolute
+        width: 100%
+        text-align: center
+        top: 179px
+        +center-position
+
++tablet 
+    .sequence-work
+        &__item 
+            width: 50%
+            &::before
+                font-size: 170px
+            &:nth-last-child(12)::after 
+                +pseudo
+                width: 1px
+                height: 100%
+                left: 100%
+                background: linear-gradient(to top, rgba(#ffffff,.4) 70%, rgba(#ffffff,0))
+            &:nth-last-child(5)
+                border-top-width: 0
+            &:nth-last-child(7)
+                border-top-width: 1px
+            &:nth-last-child(3), &:nth-last-child(4)
+                border-bottom-width: 1px
+            &:nth-last-child(2), &:nth-last-child(6), &:nth-last-child(10), &:nth-last-child(11)
+                border-left-width: 0
+            &:nth-last-child(1)
+                border-image: linear-gradient(to bottom, rgba(#ffffff,.4) 70%, rgba(#ffffff,0)) 1
+            &:nth-last-child(2), &:nth-last-child(4), &:nth-last-child(6), &:nth-last-child(8), &:nth-last-child(10), &:nth-last-child(12)
+                border-image: linear-gradient(to left, rgba(#ffffff,.4) 70%, rgba(#ffffff,0)) 1
+            &:nth-last-child(3), &:nth-last-child(5), &:nth-last-child(7), &:nth-last-child(9), &:nth-last-child(11)
+                border-image: linear-gradient(to right, rgba(#ffffff,.4) 70%, rgba(#ffffff,0)) 1
+
+
+
+                           
+                

@@ -144,4 +144,10 @@ $(document).ready(function ($) {
     $(this).parent().parent().toggleClass("rate-item_item-height");
     $(this).parent().find(".rate-item__panel").slideToggle(1500);
   });
+
+  // When the user clicks on the button, scroll to the top of the document
+  $(".main-menu__menu-button").on("click", function () {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  });
 });

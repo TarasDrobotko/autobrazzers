@@ -345,10 +345,15 @@ nav
                     float: right
                     width: 50px
                     text-align: right
+                    &__menu-button
+                        position: fixed
+                        top: 15px
+                        z-index: 4
                     &>li:first-child ~ li, #main-menu__menu
                         display: none
                     &-nested
                         left: -380%
+                        top: 50px
                         li
                             &:nth-child(9) ~ li
                                 display: inline-block

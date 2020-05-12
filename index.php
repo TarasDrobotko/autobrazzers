@@ -98,7 +98,7 @@
     <div class="header-line"></div>
   </header>
   <main>
-    <div class="calculator" id="calculator">
+    <section class="calculator" id="calculator">
       <h2>КАЛЬКУЛЯТОР РАСТАМОЖКИ АВТО ИЗ США</h2>
       <div class="car-type">
         <img src="/images/moto.png" alt="Тип мото">
@@ -128,62 +128,66 @@
           </form>
         </div>
       </div>
-    </div>
-    <div class="benefits">
+    </section>
+    <section class="benefits">
       <h2>ПРИМЕРЫ ЦЕНООБРАЗОВАНИЯ И ВЫГОДЫ АВТО ИЗ ШТАТОВ</h2>
-    </div>
-    <div class="sequence-work">
-      <h2>ПОСЛЕДОВАТЕЛЬНОСТЬ НАШЕЙ РАБОТЫ</h2>
-      <div class="work">
-        <img src="icons/our-work-proccess/auto.svg" alt="Подбор" />
-        <span>Подбор авто</span>
+    </section>
+    <section class="sequence-work">
+      <div class="container">
+        <h2>ПОСЛЕДОВАТЕЛЬНОСТЬ НАШЕЙ РАБОТЫ</h2>
+        <div class="sequence-work-wrap">
+          <div class="sequence-work__item">
+            <img src="icons/our-work-proccess/auto.svg" alt="Подбор" />
+            <span class="sequence-work__item-title">Подбор авто</span>
+          </div>
+          <div class="sequence-work__item">
+            <img src="icons/our-work-proccess/search.svg" alt="Проверка в базах" />
+            <span class="sequence-work__item-title">Проверка в $ базах</span>
+          </div>
+          <div class="sequence-work__item">
+            <img src="icons/our-work-proccess/auk.svg" alt="Аукцион" />
+            <span class="sequence-work__item-title">Выкуп с аукциона</span>
+          </div>
+          <div class="sequence-work__item">
+            <img src="icons/our-work-proccess/car.svg" alt="Страховка" />
+            <span class="sequence-work__item-title">Страховка</span>
+          </div>
+          <div class="sequence-work__item">
+            <img src="icons/our-work-proccess/uploading.svg" alt="Погрузка" />
+            <span class="sequence-work__item-title">Погрузка</span>
+          </div>
+          <div class="sequence-work__item">
+            <img src="icons/our-work-proccess/ship.svg" alt="Отправка" />
+            <span class="sequence-work__item-title">Отправка</span>
+          </div>
+          <div class="sequence-work__item">
+            <img src="icons/our-work-proccess/bill.svg" alt="Растаможка" />
+            <span class="sequence-work__item-title">Растаможка</span>
+          </div>
+          <div class="sequence-work__item">
+            <img src="icons/our-work-proccess/delivery.svg" alt="Доставка" />
+            <span class="sequence-work__item-title">Доставка</span>
+          </div>
+          <div class="sequence-work__item">
+            <img src="icons/our-work-proccess/spare_parts.svg" alt="Запчасти" />
+            <span class="sequence-work__item-title">Запчасти</span>
+          </div>
+          <div class="sequence-work__item">
+            <img src="icons/our-work-proccess/repair.svg" alt="Ремонт" />
+            <span class="sequence-work__item-title">Ремонт</span>
+          </div>
+          <div class="sequence-work__item">
+            <img src="icons/our-work-proccess/certificate.svg" alt="Сертификация" />
+            <span class="sequence-work__item-title">Сертификация</span>
+          </div>
+          <div class="sequence-work__item">
+            <img src="icons/our-work-proccess/car ready.svg" alt="Готово" />
+            <span class="sequence-work__item-title">Ваше авто готово</span>
+          </div>
+        </div>
       </div>
-      <div class="work">
-        <img src="icons/our-work-proccess/search.svg" alt="Проверка в базах" />
-        <span>Проверка в $ базах</span>
-      </div>
-      <div class="work">
-        <img src="icons/our-work-proccess/auk.svg" alt="Аукцион" />
-        <span>Выкуп с аукциона</span>
-      </div>
-      <div class="work">
-        <img src="icons/our-work-proccess/car.svg" alt="Страховка" />
-        <span>Страховка</span>
-      </div>
-      <div class="work">
-        <img src="icons/our-work-proccess/uploading.svg" alt="Погрузка" />
-        <span>Погрузка</span>
-      </div>
-      <div class="work">
-        <img src="icons/our-work-proccess/ship.svg" alt="Отправка" />
-        <span>Отправка</span>
-      </div>
-      <div class="work">
-        <img src="icons/our-work-proccess/bill.svg" alt="Растаможка" />
-        <span>Растаможка</span>
-      </div>
-      <div class="work">
-        <img src="icons/our-work-proccess/delivery.svg" alt="Доставка" />
-        <span>Доставка</span>
-      </div>
-      <div class="work">
-        <img src="icons/our-work-proccess/spare_parts.svg" alt="Запчасти" />
-        <span>Запчасти</span>
-      </div>
-      <div class="work">
-        <img src="icons/our-work-proccess/repair.svg" alt="Ремонт" />
-        <span>Ремонт</span>
-      </div>
-      <div class="work">
-        <img src="icons/our-work-proccess/certificate.svg" alt="Сертификация" />
-        <span>Сертификация</span>
-      </div>
-      <div class="work">
-        <img src="icons/our-work-proccess/car ready.svg" alt="Готово" />
-        <span>Ваше авто готово</span>
-      </div>
-    </div>
-    <div class="rate">
+    </section>
+    <section class="rate">
       <div class="container">
         <h2>ТАРИФНАЯ СЕТКА НА УСЛУГИ</h2>
         <div class="rate-wrapper">
@@ -265,8 +269,8 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="selection-cars">
+    </section>
+    <section class="selection-cars">
       <div class="container">
         <h2>ПОДБОР АВТО ИЗ США</h2>
         <div class="cars">
@@ -370,8 +374,8 @@
             <input type="submit" class="button order-by-year__order-call" value="Заказать" />
         </div>
       </div>
-    </div>
-    <div class="reviews">
+    </section>
+    <section class="reviews">
       <h2>ОТЗЫВЫ</h2>
       <div class="container">
         <div class="reviews-items">
@@ -467,8 +471,8 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="contacts">
+    </section>
+    <section class="contacts">
       <h2>КОНТАКТЫ</h2>
       <!--The div element for the map -->
       <div id="map">
@@ -507,7 +511,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
   </main>
   <footer class="footer">
     <div class="container">
