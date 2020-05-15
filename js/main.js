@@ -63,7 +63,7 @@ $(document).ready(function ($) {
     $(".main-menu-nested").toggleClass("main-menu-nested_active");
   });
 
-  // slick slider
+  // slick slider for reviews block
   $(".reviews-items").slick({
     // autoplay: true,
     autoplaySpeed: 1000,
@@ -134,6 +134,50 @@ $(document).ready(function ($) {
     } else {
       $(".order-by-year__hidden-input").val("");
     }
+  });
+
+  // slick slider for benefits block
+  $(".benefits-items").slick({
+    // autoplay: true,
+    autoplaySpeed: 1000,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    arrows: true,
+    dots: true,
+    responsive: [
+      {
+        breakpoint: 1275,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          arrows: false,
+        },
+      },
+      {
+        breakpoint: 1160,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          arrows: false,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: true,
+        },
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+        },
+      },
+    ],
   });
 
   /* rate slides toggle */
