@@ -132,28 +132,14 @@
     <section class="benefits">
       <div class="container">
         <h2>ПРИМЕРЫ ЦЕНООБРАЗОВАНИЯ И ВЫГОДЫ АВТО ИЗ ШТАТОВ</h2>
-        <div class="benefits-slider">
-          <div class="benefits-top">
+        <div class="benefits-items">
+          <div class="benefits-item-wrap">
             <div class="benefits-top-item">
               <div class="benefits-top-item__img">
                 <img src="images/mazda_3.png" alt="Mazda 3">
               </div>
               <div class="benefits-top-item__floor"></div>
             </div>
-            <div class="benefits-top-item">
-              <div class="benefits-top-item__img">
-                <img src="images/tesla_model_s.png" alt="BMW 535I">
-              </div>
-              <div class="benefits-top-item__floor"></div>
-            </div>
-            <div class="benefits-top-item">
-              <div class="benefits-top-item__img">
-                <img src="images/tiguan_2014.png" alt="VW Tiguan">
-              </div>
-              <div class="benefits-top-item__floor"></div>
-            </div>
-          </div>
-          <div class="benefits-items">
             <div class="benefits-item">
               <div class="benefits-item__header">
                 <h3>Mazda 3 <span>2013</span></h3>
@@ -197,6 +183,14 @@
                 </div>
               </div>
             </div>
+          </div>
+          <div class="benefits-item-wrap">
+            <div class="benefits-top-item">
+              <div class="benefits-top-item__img">
+                <img src="images/tesla_model_s.png" alt="BMW 535I">
+              </div>
+              <div class="benefits-top-item__floor"></div>
+            </div>
             <div class="benefits-item">
               <div class="benefits-item__header">
                 <h3>BMW 5351 <span>2014</span></h3>
@@ -239,6 +233,14 @@
                     <span class="benefits-item__price"><sub>$</sub>28 000</span></div>
                 </div>
               </div>
+            </div>
+          </div>
+          <div class="benefits-item-wrap">
+            <div class="benefits-top-item">
+              <div class="benefits-top-item__img">
+                <img src="images/tiguan_2014.png" alt="VW Tiguan">
+              </div>
+              <div class="benefits-top-item__floor"></div>
             </div>
             <div class="benefits-item">
               <div class="benefits-item__header">
@@ -284,8 +286,8 @@
                 </div>
               </div>
             </div>
-            <?php include 'sections_include/benefits_items.php'; ?>
           </div>
+          <?php include 'sections_include/benefits_items.php'; ?>
         </div>
       </div>
       </div>
