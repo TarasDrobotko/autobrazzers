@@ -1,7 +1,7 @@
 /* google map */
 var popupContent =
     '<p class="marker-content">м. Київ, вул. Сверстюка 19, 10 поверх, офіс 13</p>',
-  image = "../images/marker.png";
+  image = "../icons/map/marker.png";
 mapCenter = { lat: 50.448305, lng: 30.6059 };
 
 // Initialize and add the map

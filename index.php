@@ -44,7 +44,7 @@
             <li>
               <div class="dropdown">
                 <div class="dropdown__btn">Рус</div>
-                <div class="dropdown__content">
+                <div class="dropdown__content" id="dropd">
                   <a href="#" class="dropdown__link" data-value="Рус">Рус</a>
                   <a href="#" class="dropdown__link" data-value="Eng">Eng</a>
                 </div>
@@ -88,7 +88,7 @@
           <p class="order-block__consult-text">
             Укажите ваш номер телефона и получите полную, квалифицированную
             консультацию <strong>Бесплатно</strong></p>
-          <form action="#" class="form consult__form">
+          <form action="#" class="form consult__form" method="post">
             <input type="tel" class="input form__order-tel" name="tel_order" placeholder="+38 (0__) ___ __ __" />
             <input type="submit" class="button form__order-call" value="Заказать" />
           </form>
@@ -99,34 +99,276 @@
   </header>
   <main>
     <section class="calculator" id="calculator">
-      <h2>КАЛЬКУЛЯТОР РАСТАМОЖКИ АВТО ИЗ США</h2>
-      <div class="car-type">
-        <img src="/images/moto.png" alt="Тип мото">
-        <a href="">Мото</a>
-      </div>
-      <div class="car-type">
-        <img src="/images/aston_martin_car_branding_mockup_free_psd.png" alt="Тип легковые">
-        <a href="">Легковые</a>
-      </div>
-      <div class="car-type">
-        <img src="/images/tesla_branding.jpg" alt="Тип електро">
-        <a href="">Електро</a>
-      </div>
-      <div class="car-type">
-        <img src="/images/pickup_mock_up_01.png" alt="Тип пикап">
-        <a href="">Пикап</a>
-      </div>
-      <div class="calculation">
-        <div id="scan-for-calc">
-          <input type="text" placeholder="Вставте ссылку из Copart, IAAI, Manhelm" class="scan">
-          <button type="button" class="scan">Сканировать</button>
-        </div>
-        <div id=calculate-form>
-          <form>
-
-            <input type="submit" name="generate_pdf" value="CГЕНЕРИРОВАТЬ В PDF">
-          </form>
-        </div>
+      <div class="container">
+        <h2>КАЛЬКУЛЯТОР РАСТАМОЖКИ АВТО ИЗ США</h2>
+        <form action="#" class="calculator-form" method="post">
+          <div class="car-type-wrap">
+            <div class="car-type-item">
+              <input type="radio" value="Мото" class="car-type-item_radio" id="car-type-item_1">
+              <div class="car-type-item__switch">
+                <img src="/icons/selection_cars/switch.png" alt="Переключатель">
+              </div>
+              <img src="/images/moto-ab.png" alt="Тип мото">
+              <label for="car-type-item_1" class="car-type-item__label">Мото</label>
+            </div>
+            <div class=" car-type-item">
+              <input type="radio" value="Легковые" class="car-type-item_radio" id="car-type-item_2">
+              <div class="car-type-item__switch">
+                <img src="/icons/selection_cars/switch.png" alt="Переключатель">
+              </div>
+              <img src="/images/aston_martin_car_branding_mockup_free_psd.png" alt="Тип легковые">
+              <label for="car-type-item_2" class="car-type-item__label">Легковые</label>
+            </div>
+            <div class="car-type-item">
+              <input type="radio" value="Електро" class="car-type-item_radio" id="car-type-item_3">
+              <div class="car-type-item__switch">
+                <img src="/icons/selection_cars/switch.png" alt="Переключатель">
+              </div>
+              <img src="/images/tesla_branding.png" alt="Тип електро">
+              <label for="car-type-item_3" class="car-type-item__label">Електро</label>
+            </div>
+            <div class="car-type-item">
+              <input type="radio" value="Пикап" class="car-type-item_radio" id="car-type-item_4">
+              <div class="car-type-item__switch">
+                <img src="/icons/selection_cars/switch.png" alt="Переключатель">
+              </div>
+              <img src="/images/pickup_mock_up_01.png" alt="Тип пикап">
+              <label for="car-type-item_4" class="car-type-item__label">Пикап</label>
+            </div>
+          </div>
+          <div class="calculator-form__main-block">
+            <div class="calculator-form__scan">
+              <input type="text" placeholder="Вставте ссылку из Copart, IAAI, Manhelm" class="input input_calc">
+              <button type="button" class="button button_scan">Сканировать</button>
+            </div>
+            <div class="calculator-form__columns">
+              <div class="calculator-form__columns-left">
+                <div class="columns-left-item">
+                  <input type="text" placeholder="Цена авто" class="input input_calc">
+                  <div class="columns-left-item__icon">
+                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 33.2 60.7" style="enable-background:new 0 0 33.2 60.7;fill:#727272" xml:space="preserve">
+                      <g>
+                        <g>
+                          <path d="M4.6,8.6C7.1,5.8,10.6,4.5,15,4.4V0h3.2v4.4C22.6,4.7,26,6,28.4,8.3c2.4,2.3,3.6,5.3,3.7,9.1h-5.8
+			c-0.2-1.7-0.6-3.1-1.4-4.4c-1.4-2.2-3.6-3.4-6.7-3.5v16.2c5.1,1.4,8.6,2.8,10.5,4.1c3,2.1,4.5,5.2,4.5,9.2
+			c0,5.9-1.9,10.1-5.8,12.6c-2.1,1.4-5.2,2.3-9.2,2.7v6.5H15v-6.5c-6.5-0.4-10.8-2.7-13.1-6.9C0.6,45.2,0,42.1,0,38.3h5.9
+			c0.2,3,0.7,5.3,1.4,6.7c1.4,2.5,4,3.9,7.7,4.2V31.1c-4.8-0.9-8.4-2.4-10.7-4.6c-2.3-2.1-3.4-5.1-3.4-8.9
+			C0.9,14.3,2.2,11.3,4.6,8.6z M9.1,22.4c1.5,1.2,3.4,2.1,5.9,2.6V9.4c-2.9,0.1-5,1-6.3,2.7c-1.2,1.7-1.9,3.4-1.9,5.2
+			C6.9,19.5,7.7,21.2,9.1,22.4z M26.1,45.2c0.8-1.3,1.1-2.9,1.1-4.6c0-2.8-1-4.9-3.1-6.3c-1.2-0.8-3.2-1.6-5.9-2.4v17.5
+			C22,49.2,24.6,47.8,26.1,45.2z" />
+                        </g>
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+                <div class="columns-left-item"><input type="text" placeholder="Объем двигателя" class="input input_calc">
+                  <div class="columns-left-item__icon">
+                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 452.3 318.9" style="enable-background:new 0 0 452.3 318.9;fill:#727272" xml:space="preserve">
+                      <path d="M405,94.9c-5,0-9,4-9,9v53.4h-18.3v-45.1c0-5-4-9-9-9H327l-7.8-25.9c-1.1-3.8-4.6-6.4-8.6-6.4H247V48h40c5,0,9-4,9-9V9
+	c0-5-4-9-9-9h-129c-5,0-9,4-9,9v30c0,5,4,9,9,9h40v22.8h-92.7c-3.3,0-6.3,1.8-7.9,4.7l-15,27.6H47.2c-5,0-9,4-9,9v45.1H18V92.9
+	c0-5-4-9-9-9s-9,4-9,9v186c0,5,4,9,9,9s9-4,9-9v-64.3h20.2v47.6c0,5,4,9,9,9h74.9l34.3,44.2c1.7,2.2,4.3,3.5,7.1,3.5h205.2
+	c5,0,9-4,9-9v-95.3H396V268c0,5,4,9,9,9c26,0,47.2-21.2,47.2-47.2v-87.7C452.3,116.1,431.1,94.9,405,94.9z M18,196.6v-21.3h20.2
+	v21.3H18z M167.1,18h111v12h-111V18z M216.1,48H229v22.8h-12.9V48z M56.2,121.2h6.4v132.1h-6.4V121.2z M133.7,256.7
+	c-1.7-2.2-4.3-3.5-7.1-3.5h-46V121.2h7.2c3.3,0,6.3-1.8,7.9-4.7l15-27.6h193.1l7.8,25.9c1.1,3.8,4.6,6.4,8.6,6.4h16.2v179.8H167.9
+	L133.7,256.7z M359.7,300.9h-5.3V121.2h5.3V300.9z M377.7,196.6v-21.3H396v21.3H377.7z M434.3,229.8c0,13-8.5,24-20.2,27.8V114.3
+	c11.7,3.8,20.2,14.8,20.2,27.8V229.8z" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="columns-left-item"><input type="text" placeholder="Год выпуска" class="input input_calc">
+                  <div class="columns-left-item__icon">
+                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512; fill:#727272" xml:space="preserve">
+                      <g>
+                        <g>
+                          <path d="M452,40h-24V0h-40v40H124V0H84v40H60C26.9,40,0,66.9,0,100v352c0,33.1,26.9,60,60,60h392c33.1,0,60-26.9,60-60V100
+			C512,66.9,485.1,40,452,40z M472,452c0,11-9,20-20,20H60c-11,0-20-9-20-20V188h432V452z M472,148H40v-48c0-11,9-20,20-20h24v40h40
+			V80h264v40h40V80h24c11,0,20,9,20,20V148z" />
+                        </g>
+                      </g>
+                      <g>
+                        <g>
+                          <rect x="76" y="230" width="40" height="40" />
+                        </g>
+                      </g>
+                      <g>
+                        <g>
+                          <rect x="156" y="230" width="40" height="40" />
+                        </g>
+                      </g>
+                      <g>
+                        <g>
+                          <rect x="236" y="230" width="40" height="40" />
+                        </g>
+                      </g>
+                      <g>
+                        <g>
+                          <rect x="316" y="230" width="40" height="40" />
+                        </g>
+                      </g>
+                      <g>
+                        <g>
+                          <rect x="396" y="230" width="40" height="40" />
+                        </g>
+                      </g>
+                      <g>
+                        <g>
+                          <rect x="76" y="310" width="40" height="40" />
+                        </g>
+                      </g>
+                      <g>
+                        <g>
+                          <rect x="156" y="310" width="40" height="40" />
+                        </g>
+                      </g>
+                      <g>
+                        <g>
+                          <rect x="236" y="310" width="40" height="40" />
+                        </g>
+                      </g>
+                      <g>
+                        <g>
+                          <rect x="316" y="310" width="40" height="40" />
+                        </g>
+                      </g>
+                      <g>
+                        <g>
+                          <rect x="76" y="390" width="40" height="40" />
+                        </g>
+                      </g>
+                      <g>
+                        <g>
+                          <rect x="156" y="390" width="40" height="40" />
+                        </g>
+                      </g>
+                      <g>
+                        <g>
+                          <rect x="236" y="390" width="40" height="40" />
+                        </g>
+                      </g>
+                      <g>
+                        <g>
+                          <rect x="316" y="390" width="40" height="40" />
+                        </g>
+                      </g>
+                      <g>
+                        <g>
+                          <rect x="396" y="310" width="40" height="40" />
+                        </g>
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+                <div class="columns-left-item">
+                  <select id="columns-left-select-1" name="select_auction" class="columns-left-item__select">
+                    <option value="Аукцион">Аукцион</option>
+                    <option value="Другое">Другое</option>
+                  </select>
+                  <div class="columns-left-item__icon">
+                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;fill:#727272;" xml:space="preserve">
+                      <g>
+                        <path d="M322.6,365c5.9,5.9,15.4,5.9,21.2,0l127.3-127.3c5.9-5.9,5.9-15.4,0-21.2l-42.4-42.4c-2.2-2.2-5.2-3.8-8.4-4.2
+		c-58-8.7-105.4-53.8-114.6-114.6c-0.4-3-1.9-6.1-4.2-8.4L259,4.4c-5.9-5.9-15.4-5.9-21.2,0L110.5,131.7c-5.9,5.9-5.9,15.4,0,21.2
+		l42.4,42.4c2.3,2.3,5.4,3.8,8.4,4.2c0.3,0,17.9,2.8,38.6,12.4L4.4,407.4c-5.9,5.9-5.9,15.4,0,21.2l42.4,42.4
+		c5.9,5.9,15.4,5.9,21.2,0l195.5-195.5c9.6,20.7,12.4,38.3,12.4,38.6c0.5,3.3,2.1,6.4,4.2,8.4L322.6,365z M333.2,333.2L312,312
+		l106.1-106.1l21.2,21.2L333.2,333.2z M388.9,192.6l-90.2,90.2c-18-53.3-52.6-88-106.1-106.1l90.2-90.2
+		C300.9,139.9,335.5,174.6,388.9,192.6z M248.3,36.2l21.2,21.2L163.5,163.5l-21.2-21.2L248.3,36.2z M57.4,439.3l-21.2-21.2
+		l190.2-190.2c8,6.1,14.8,12.8,21.2,21.2L57.4,439.3z" />
+                        <path d="M467,422H347c-24.8,0-45,20.2-45,45v30c0,8.3,6.7,15,15,15h180c8.3,0,15-6.7,15-15v-30C512,442.2,491.8,422,467,422z
+		 M482,482H332v-15c0-8.3,6.7-15,15-15h120c8.3,0,15,6.7,15,15V482z" />
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+                <div class="columns-left-item">
+                  <select id="columns-left-select-2" name="select_insurance" class="columns-left-item__select">
+                    <option value="Страховка">Страховка</option>
+                    <option value="Нет">Нет</option>
+                  </select>
+                  <div class="columns-left-item__icon">
+                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 389.7 320.2" style="enable-background:new 0 0 389.7 320.2;fill:#727272;" xml:space="preserve">
+                      <path d="M82.2,182.1c-0.5,0.1-1,0.1-1.6,0.1s-1.1,0-1.6-0.1c-21.8-3.9-41.9-15.4-56.3-32.5C8.1,132.3,0,110.4,0,87.8V32.4
+	C0,25,4.7,14.7,27.2,7.3C41.6,2.6,60.6,0,80.7,0s39.1,2.6,53.5,7.3c22.5,7.3,27.2,17.7,27.2,25.1c0,0.1,0,0.1,0,0.2v55.2
+	c0,22.6-8.1,44.5-22.7,61.8C124.1,166.7,104.1,178.3,82.2,182.1z M143.3,87.8V32.6C141.6,28.4,120.7,18,80.7,18
+	C40.6,18,19.8,28.4,18,32.6v55.2c0,37.2,26.3,69.1,62.7,76.3C117.1,156.9,143.3,125,143.3,87.8z M267,277.7c0,5-4,9-9,9h-52
+	c-4.1,19.1-21.2,33.5-41.5,33.5c-20.8,0-38.2-15.1-41.8-34.9c-7.2-2.3-13.2-7.1-16.4-13.5c-1.6-3.2-2.4-6.6-2.4-10.2v-60
+	c0-5,4-9,9-9s9,4,9,9v60c0,0.7,0.2,1.4,0.5,2.1c0.3,0.6,0.8,1.2,1.4,1.8c5.2-17.5,21.5-30.3,40.7-30.3c20.3,0,37.4,14.4,41.5,33.5
+	h52C263,268.7,267,272.7,267,277.7z M189,277.7c0-13.5-11-24.5-24.5-24.5c-13.4,0-24.3,10.9-24.5,24.3c0,0.1,0,0.2,0,0.3
+	c0.1,13.4,11,24.3,24.5,24.3C178,302.2,189,291.2,189,277.7z M389.7,242.4v5.8c0,3.8,0,8.1,0,13.4c0,10.8-7.7,20.1-18.7,23.6
+	c-3.5,19.9-20.9,35-41.8,35c-23.4,0-42.5-19-42.5-42.5s19-42.5,42.5-42.5c19.1,0,35.4,12.7,40.7,30.2c1.1-1.1,1.8-2.5,1.8-3.9
+	c0-5.3,0-9.7,0-13.4v-5.8c0-7.2,0.1-17,0-21.6c-0.1-3.3-0.2-6-0.4-8.3H232.8c-3.2,0-10.8,0-33.9-22.9c-7.1-7-21.1-21.8-23.7-28
+	c-1.9-4.6,0.3-9.9,4.9-11.8c4.5-1.9,9.7,0.2,11.7,4.7c1.2,2.2,8.5,11.2,19.2,21.7c13.4,13.3,20.5,17.6,22.4,18.3h127.8
+	c-2.9-2.8-6.6-6.1-11.4-10.3c-2.5-2.2-5.2-4.6-8.2-7.3c-2.2-2-4.4-4-6.5-6c-3.1-2.9-6.2-5.9-9.5-8.7c-2.9-2.4-5.7-4.8-8.3-7
+	C284,127,275,119.4,246.8,119.4h-62.1c-5,0-9-4-9-9s4-9,9-9h62.1c34.7,0,48.6,11.7,82.1,39.9c2.6,2.2,5.3,4.5,8.2,6.9
+	c3.7,3.1,7.1,6.4,10.4,9.5c2.1,2,4.1,3.9,6,5.7c3,2.7,5.6,5,8.1,7.2c21.6,19.1,27.4,24.2,27.9,49.7
+	C389.8,225.1,389.7,234.7,389.7,242.4z M353.6,277.6c-0.1-13.4-11-24.4-24.5-24.4s-24.5,11-24.5,24.5s11,24.5,24.5,24.5
+	s24.4-11,24.5-24.4C353.6,277.7,353.6,277.7,353.6,277.6z M329.2,268.7L329.2,268.7c-5,0-9,4-9,9s4,9,9,9s9-4,9-9
+	S334.2,268.7,329.2,268.7z M149.3,203.4c0,5,4,9,9,9h10.1c5,0,9-4,9-9s-4-9-9-9h-10.1C153.3,194.4,149.3,198.4,149.3,203.4z
+	 M164.6,268.7L164.6,268.7c-5,0-9,4-9,9s4,9,9,9s9-4,9-9S169.5,268.7,164.6,268.7z" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="calculator-form__columns-info">
+                <div class="column-info">
+                  <input type="hidden" value="100">
+                  <div class="column-info__field"><span class="column-info__field-text">Агентские услуги</span></div>
+                  <div class="column-info__sum"><span><sub>$</sub>100</span></div>
+                </div>
+                <div class="column-info">
+                  <input type="hidden" value="300">
+                  <div class="column-info__field"><span class="column-info__field-text">Акциз</span></div>
+                  <div class="column-info__sum"><span><sub>$</sub>300</span></div>
+                </div>
+                <div class="column-info">
+                  <input type="hidden" value="100">
+                  <div class="column-info__field"><span class="column-info__field-text"> Доставка по суше </span></div>
+                  <div class="column-info__sum"><span><sub>$</sub>100</span></div>
+                </div>
+                <div class="column-info">
+                  <input type="hidden" value="300">
+                  <div class="column-info__field"><span class="column-info__field-text">Пошлина</span></div>
+                  <div class="column-info__sum"><span><sub>$</sub>300</span></div>
+                </div>
+                <div class="column-info">
+                  <input type="hidden" value="100">
+                  <div class="column-info__field"><span class="column-info__field-text">Доставка по морю</span></div>
+                  <div class="column-info__sum"><span><sub>$</sub>100</span></div>
+                </div>
+                <div class="column-info">
+                  <input type="hidden" value="300">
+                  <div class="column-info__field"><span class="column-info__field-text">НДС</span></div>
+                  <div class="column-info__sum"><span><sub>$</sub>300</span></div>
+                </div>
+                <div class="column-info">
+                  <input type="hidden" value="200">
+                  <div class="column-info__field"><span class="column-info__field-text">Логистические расходы</span></div>
+                  <div class="column-info__sum"><span><sub>$</sub>200</span></div>
+                </div>
+                <div class="column-info">
+                  <input type="hidden" value="500">
+                  <div class="column-info__field"><span class="column-info__field-text">Стоянка в евротерминале</span></div>
+                  <div class="column-info__sum"><span><sub>$</sub>500</span></div>
+                </div>
+                <div class="column-info">
+                  <input type="hidden" value="200">
+                  <div class="column-info__field"><span class="column-info__field-text">Экспедитор Одесса</span></div>
+                  <div class="column-info__sum"><span><sub>$</sub>200</span></div>
+                </div>
+                <div class="column-info">
+                  <input type="hidden" value="500">
+                  <div class="column-info__field"><span class="column-info__field-text">Страховка авто</span></div>
+                  <div class="column-info__sum"><span><sub>$</sub>500</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="calculator-form__sum">
+              <label for="calculator-form__sum">Общая сумма:</label>
+              <input type="text" id="calculator-form__sum" value="" class="input" disabled="disabled">
+              <div class="calculator-form__sum-icon"><img src="/icons/icon_calculator/dollar_active.svg" alt="Иконка доллара"></div>
+            </div>
+            <input type="submit" name="generate_pdf" value="Cгенерировать в pdf" class="button calculator-form_submit">
+          </div>
+        </form>
       </div>
     </section>
     <section class="benefits">
@@ -435,7 +677,7 @@
         <h2>ПОДБОР АВТО ИЗ США</h2>
         <div class="cars">
           <div class="cars-item">
-            <div class="cars-item__switch"><img src="/images/switch.png" alt="Значок переключателя"></div>
+            <div class="cars-item__switch"><img src="/icons/selection_cars/switch.png" alt="Значок переключателя"></div>
             <img src="/images/moto.png" alt="Мотоцикл" class="cars-item__img">
             <div class="cars-item__floor"></div>
             <div class="cars-item__descr">
@@ -445,7 +687,7 @@
             </div>
           </div>
           <div class="cars-item">
-            <div class="cars-item__switch"><img src="/images/switch.png" alt="Значок переключателя"></div>
+            <div class="cars-item__switch"><img src="/icons/selection_cars/switch.png" alt="Значок переключателя"></div>
             <img src="/images/snowflake.png" alt="Седан" class="cars-item__img">
             <div class="cars-item__floor" id="car-id"></div>
             <div class="cars-item__descr">
@@ -455,7 +697,7 @@
             </div>
           </div>
           <div class="cars-item">
-            <div class="cars-item__switch"><img src="/images/switch.png" alt="Значок переключателя"></div>
+            <div class="cars-item__switch"><img src="/icons/selection_cars/switch.png" alt="Значок переключателя"></div>
             <img src="/images/luxury_white_pearl.png" alt="Купе" class="cars-item__img">
             <div class="cars-item__floor"></div>
             <div class="cars-item__descr">
@@ -465,7 +707,7 @@
             </div>
           </div>
           <div class="cars-item">
-            <div class="cars-item__switch"><img src="/images/switch.png" alt="Значок переключателя"></div>
+            <div class="cars-item__switch"><img src="/icons/selection_cars/switch.png" alt="Значок переключателя"></div>
             <img src="/images/tesla_branding_123.png" alt="Электрокар" class="cars-item__img">
             <div class="cars-item__floor"></div>
             <div class="cars-item__descr">
@@ -475,7 +717,7 @@
             </div>
           </div>
           <div class="cars-item">
-            <div class="cars-item__switch"><img src="/images/switch.png" alt="Значок переключателя"></div>
+            <div class="cars-item__switch"><img src="/icons/selection_cars/switch.png" alt="Значок переключателя"></div>
             <img src="/images/suv.png" alt="Внедорожник" class="cars-item__img">
             <div class="cars-item__floor"></div>
             <div class="cars-item__descr">
@@ -485,7 +727,7 @@
             </div>
           </div>
           <div class="cars-item">
-            <div class="cars-item__switch"><img src="/images/switch.png" alt="Значок переключателя"></div>
+            <div class="cars-item__switch"><img src="/icons/selection_cars/switch.png" alt="Значок переключателя"></div>
             <img src="/images/picap.png" alt="Пикап" class="cars-item__img">
             <div class="cars-item__floor"></div>
             <div class="cars-item__descr">
@@ -495,7 +737,7 @@
             </div>
           </div>
           <div class="cars-item">
-            <div class="cars-item__switch"><img src="/images/switch.png" alt="Значок переключателя"></div>
+            <div class="cars-item__switch"><img src="/icons/selection_cars/switch.png" alt="Значок переключателя"></div>
             <img src="/images/miniven.png" alt="Минивэн" class="cars-item__img">
             <div class="cars-item__floor"></div>
             <div class="cars-item__descr">
@@ -505,7 +747,7 @@
             </div>
           </div>
           <div class="cars-item">
-            <div class="cars-item__switch"><img src="/images/switch.png" alt="Значок переключателя"></div>
+            <div class="cars-item__switch"><img src="/icons/selection_cars/switch.png" alt="Значок переключателя"></div>
             <img src="/images/sprinter_worker.png" alt="Mercedes-Benz Sprinter Worker" class="cars-item__img">
             <div class="cars-item__floor"></div>
             <div class="cars-item__descr">
@@ -532,6 +774,7 @@
             </div>
             <div class="order-by-year_break"></div>
             <input type="submit" class="button order-by-year__order-call" value="Заказать" />
+          </form>
         </div>
       </div>
     </section>
@@ -662,8 +905,9 @@
             <div class="order-block__group">
               <h3>Закажите обратный звонок</h3>
               <p class="order-block__consult-text">
-                Начните работу с нами и уже через 30-40 дней получите ваше авто из США</p>
-              <form action="#" class="form consult__form">
+                Начните работу с нами и уже через 30-40 дней получите ваше авто из США
+              </p>
+              <form action="#" class="form consult__form" method="post">
                 <input type="tel" class="input form__order-tel" name="tel_order" placeholder="+38 (0__) ___ __ __" />
                 <input type="submit" class="button form__order-call" value="Заказать" />
               </form>
@@ -686,7 +930,7 @@
                 <span class="main-menu__tel">+38 (097) 077 09 75</span>
               </a>
             </li>
-            <li>
+            <li id="dropdown-li">
               <div class="dropdown">
                 <div class="dropdown__btn">Рус</div>
                 <div class="dropdown__content">

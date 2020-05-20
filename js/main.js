@@ -11,27 +11,47 @@ $(document).ready(function ($) {
   });
 
   /* select settings */
-  $(".dropdown__link").on("click", function () {
-    var value = $(this).attr("data-value");
-    $(".dropdown__btn").text(value);
-    if (value == "Рус") {
-      $(".dropdown__btn").removeClass("dropdown_en").addClass("dropdown_rus");
-    } else {
-      $(".dropdown__btn").removeClass("dropdown_rus").addClass("dropdown_en");
-    }
-    $(".dropdown__content").hide();
+  function getDropdownElem() {
+    var clickedElement = $(event.target);
+    var $dropdown = clickedElement.closest(".dropdown");
+    return $dropdown;
+  }
+
+  $(".dropdown").on("click", function () {
+    var $dropdown = getDropdownElem();
+    var $dropDownContent = $dropdown.find(".dropdown__content");
+    var $dropDownBtn = $dropdown.find(".dropdown__btn");
+    $dropDownBtn.toggleClass("dropdown_open");
+    $dropDownContent.toggle();
+
+    $(".dropdown__link").on("click", function () {
+      var value = $(this).attr("data-value");
+      $(".dropdown__btn").text(value);
+      if (value == "Рус") {
+        $(".dropdown__btn").removeClass("dropdown_en").addClass("dropdown_rus");
+      } else {
+        $(".dropdown__btn").removeClass("dropdown_rus").addClass("dropdown_en");
+      }
+    });
+
+    $(document).click(function (event) {
+      $target = $(event.target);
+      if (
+        !$target.closest(".dropdown").length &&
+        $dropDownContent.is(":visible")
+      ) {
+        $dropDownContent.hide();
+        $dropDownBtn.toggleClass("dropdown_open");
+      }
+    });
   });
 
-  $(".dropdown").hover(function () {
-    $(".dropdown__content").show();
-    $(".dropdown__btn").toggleClass("dropdown_open");
-  });
-  $(".dropdown").mouseleave(function () {
-    $(".dropdown__content").hide();
+  /*  calculator selects */
+  $(".columns-left-item__select").select2({
+    minimumResultsForSearch: Infinity,
   });
 
   /*  price select */
-
   $(".price-select").select2({
     minimumResultsForSearch: Infinity,
   });
@@ -105,6 +125,44 @@ $(document).ready(function ($) {
         },
       },
     ],
+  });
+
+  /*  calculator block items toggle  */
+  function toggleCarType($switch, $label) {
+    $switch.toggleClass("car-type-item_switch-on");
+    $label.toggleClass("car-type-item_lab-yellow");
+  }
+
+  function toggleCarTypeMain(clickElem, toggleCarType) {
+    var $item = clickElem.closest(".car-type-item");
+    var $label = $item.find(".car-type-item__label");
+    var $switch = $item.find(".car-type-item__switch");
+    var $radio = $item.find(".car-type-item_radio");
+    $(".car-type-item_radio").prop("checked", false);
+    $radio.prop("checked", !$radio.prop("checked"));
+
+    toggleCarType($switch, $label);
+
+    if ($(".car-type-item__label").hasClass("car-type-item_lab-yellow")) {
+      $(".car-type-item__label").removeClass("car-type-item_lab-yellow");
+      $(".car-type-item__switch").removeClass("car-type-item_switch-on");
+
+      toggleCarType($switch, $label);
+    }
+    if (!$label.hasClass("car-type-item_lab-yellow")) {
+      $radio.prop("checked", false);
+    }
+  }
+
+  $(".car-type-item").on("click", function (event) {
+    var clickElem;
+    var clickElem = $(event.target);
+    toggleCarTypeMain(clickElem, toggleCarType);
+
+    if ($(event.target).is("label")) {
+      var clickElem = $(event.target);
+      toggleCarTypeMain(clickElem, toggleCarType);
+    }
   });
 
   /* car lighting */
@@ -193,5 +251,26 @@ $(document).ready(function ($) {
   $(".main-menu__menu-button").on("click", function () {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  });
+
+  /* active calculator block fields */
+  $(".columns-left-item").on("click", function (event) {
+    $(".columns-left-item").removeClass("columns-left-item_active");
+    $(".columns-left-item").removeClass("columns-left-item_select-arrow");
+    var clickElem = $(event.target);
+    $item = clickElem.closest(".columns-left-item");
+    $item.toggleClass("columns-left-item_active");
+    $dropdown = $(".select2-container--open");
+    if (!$dropdown.is(":visible")) {
+      $item.removeClass("columns-left-item_select-arrow");
+    } else {
+      $item.addClass("columns-left-item_select-arrow");
+    }
+
+    var $eventSelect = $item.find(".columns-left-item__select");
+
+    $eventSelect.on("select2:close", function (e) {
+      $item.removeClass("columns-left-item_select-arrow");
+    });
   });
 });

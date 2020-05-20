@@ -39,6 +39,41 @@
                 opacity: 1
             &:focus, &:hover
                 border: solid 1px #c4c1c1
+    .select2.select2-container
+        height: 50px
+    .select2.select2-container--default .select2-selection--single
+        border-radius: 25px
+        height: 50px
+        outline: none
+        border: solid 1px #8b8b8b
+        color: rgba(255, 255, 255, .3)
+        cursor: pointer
+        font-size: 16px
+        background: url('/icons/selection_cars/chevron-down.svg') no-repeat right -35px center/50% 50% #1c1c1c
+        &:hover
+            border: solid 1px $gold
+            background: url('/icons/selection_cars/chevron-down-gold.svg') no-repeat right -35px center/50% 50% #1c1c1c
+        &.select2-selection--single_change
+            background: url('/icons/selection_cars/chevron-up.svg') no-repeat right -35px center/50% 50% #1c1c1c!important
+
+    .select2.select2-container .select2-selection--single .select2-selection__rendered 
+        padding-left: 20px
+        padding-right: 20px
+        line-height: 3em
+
+    .select2.select2-container--default.select2-container--open.select2-container--below .select2-selection--single, 
+    .select2.select2-container--default.select2-container--open.select2-container--below .select2-selection--multiple,
+    .select2.select2-container--default.select2-container--open.select2-container--above .select2-selection--single, 
+    .select2.select2-container--default.select2-container--open.select2-container--above .select2-selection--multiple  
+        border-radius: 25px
+
+    .select2.select2-container--default .select2-selection--single .select2-selection__arrow
+        display: none
+
+.select2-dropdown--above 
+    top: -10px
+.select2-dropdown--below
+    top: 10px
 
 .order-by-year__order-tel, .price-select
   height: 50px
@@ -58,37 +93,6 @@
   background: url('/icons/selection_cars/chevron-down.svg') no-repeat right -35px center/50% 50% #1c1c1c
   outline: 0
 
-.select2.select2-container--default .select2-selection--single
-    border-radius: 25px
-    height: 50px
-    outline: none
-    border: solid 1px #8b8b8b
-    color: rgba(255, 255, 255, .3)
-    cursor: pointer
-    font-size: 16px
-    background: url('/icons/selection_cars/chevron-down.svg') no-repeat right -35px center/50% 50% #1c1c1c
-    &:hover
-        border: solid 1px $gold
-        background: url('/icons/selection_cars/chevron-down-gold.svg') no-repeat right -35px center/50% 50% #1c1c1c
-    &.select2-selection--single_change
-        background: url('/icons/selection_cars/chevron-up.svg') no-repeat right -35px center/50% 50% #1c1c1c!important
-
-.select2.select2-container .select2-selection--single .select2-selection__rendered 
-    padding-left: 20px
-    padding-right: 20px
-    line-height: 3em
-
-.select2.select2-container--default.select2-container--open.select2-container--below .select2-selection--single, 
-.select2.select2-container--default.select2-container--open.select2-container--below .select2-selection--multiple,
-.select2.select2-container--default.select2-container--open.select2-container--above .select2-selection--single, 
-.select2.select2-container--default.select2-container--open.select2-container--above .select2-selection--multiple  
-    border-radius: 25px
-
-.select2.select2-container--default .select2-selection--single .select2-selection__arrow
-    display: none
-
-.select2-dropdown--above 
-    top: - 10px
 
 
 .cars

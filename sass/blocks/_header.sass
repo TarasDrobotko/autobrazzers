@@ -263,16 +263,16 @@ nav
     &_open::after
         transform: rotate(180deg)
     &_rus.dropdown__btn::before
-        background: url('/images/capa_1.png') no-repeat left center
+        background: url('/icons/language_icons/rus.png') no-repeat left center
     &_en.dropdown__btn::before
-        background: url('/images/united-kingdom.svg') no-repeat left center
+        background: url('/icons/language_icons/united-kingdom.svg') no-repeat left center
         height: 18px
     &__btn::before
         +pseudo
         right: 75px
         top: -7px
         cursor: pointer
-        background: url('/images/capa_1.png') no-repeat left center
+        background: url('/icons/language_icons/rus.png') no-repeat left center
         height: 18px
         width: 18px
         border-radius: 50%
@@ -284,14 +284,11 @@ nav
         text-decoration: none
         display: block
     &__content a:first-child
-        background: url('/images/russia.svg') no-repeat left 5px top
+        background: url('/icons/language_icons/russia.svg') no-repeat left 5px top
     &__content a:last-child
-        background: url('/images/uk.svg') no-repeat left 5px top
+        background: url('/icons/language_icons/uk.svg') no-repeat left 5px top
     &__content a:hover 
         background-color: #f1f1f1
-
-.dropdown:hover .dropdown__content 
-    display: block
 
 +desktop
     header
@@ -399,5 +396,12 @@ nav
             left: 50%
             transform: translateX(-50%)
           
-
++phone-sm
+    header
+        .container
+            .header-top-group
+                nav
+                    .menu-button
+                        right: 15px
+                        
 

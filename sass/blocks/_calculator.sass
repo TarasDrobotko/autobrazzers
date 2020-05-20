@@ -1,0 +1,374 @@
+.calculator
+    background: url('/images/asphalt_auto_automobile_calc.png') no-repeat center top/cover #000000
+    padding-bottom: 75px
+    h2 
+        +h2-pos
+        margin-bottom: 55px
+    .button
+        &_scan 
+            height: 40px
+            background-color: $gold
+            border: none
+            font-size: 14px
+            +bold 
+            margin-left: 30px
+            &:hover
+                background-color: $gold-dark
+    &-form
+        &__scan
+            display: flex
+            justify-content: space-between
+            margin-bottom: 30px
+            input
+                flex-grow: 1
+                padding-right: 15px
+                &::placeholder
+                    color: rgba(#000000, .4)
+                    opacity: 1
+
+        &__main-block
+            height: 520px
+            border-radius: 20px
+            background-color: #fff
+            padding: 40px 75px
+            margin-top: 40px
+        &_submit
+            display: block
+            width: 222px
+            border: none
+            font-size: 13px
+            text-align: left
+            padding-left: 20px
+            +bold
+            margin: 0 auto
+            background: url("/icons/icon_calculator/pdf.svg") no-repeat  right -15px center/40% 40% $gold
+        &__columns
+            display: flex
+            &-left
+                width: calc(100%/3)
+            &-info
+                width: calc(100% - 100%/3)
+                display: flex
+                flex-wrap: wrap
+                justify-content: space-between
+                .column-info
+                    width: calc(100%/2 - 20px)
+                    +input-calc
+                    padding-left: 35px
+                    border: solid 2px #d8d8d8
+                    margin-left: 10px
+                    margin-bottom: 10px
+                    background: url('/icons/icon_calculator/information.svg') no-repeat left -40px top 12px/40% 40%
+                    position: relative
+                    &__field
+                        height: 100%
+                        display: flex
+                        align-items: center
+                        &-text
+                            font-size: 14px
+                            color: rgba(#000000, .4)
+                            line-height: 0
+                    &__sum
+                        +col-ico
+                        background-color: #d8d8d8
+                        right: -2px
+                        top: -2px
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                        span 
+                            font-size: 16px
+                            color: #000000
+                            +bold
+                            sub 
+                                 bottom: -0.025em
+                                 font-size: 65%
+    
+        &__sum
+            display: flex
+            align-items: center
+            justify-content: flex-end
+            position: relative
+            margin-bottom: 20px
+            margin-top: 10px
+            label
+                font-size: 14px
+                +bold 
+            &-icon
+                +col-ico
+                background-color: $gold
+                display: flex
+                align-items: center
+                justify-content: center
+                img 
+                    width: 10px
+            input
+                +input-calc
+                padding-left: 15px
+                width: 175px
+                margin-left: 20px
+                border: 2px solid $gold
+                +bold 
+                font-size: 16px
+
+.columns-left-item
+    margin-bottom: 10px
+    position: relative
+    width: calc(100% - 20px)
+    input
+        width: 100%
+        &::placeholder
+            color: rgba(#000000, .4)
+            opacity: 1
+    &__icon 
+        display: flex
+        align-items: center
+        justify-content: center
+        background:
+            color: #d8d8d8
+        +col-ico
+        top: 0
+        right: 0px
+        svg
+            height: 17px
+    &:nth-last-child(2)
+        .columns-left-item
+            &__icon
+                svg
+                    height: 20px
+    &:nth-last-child(1)
+        .columns-left-item
+            &__icon
+                svg
+                    height: 18px
+    &__select 
+        appearance: none
+        position: relative
+        display: block
+        width: 100%
+        padding-left: 15px
+        border: solid 2px #d8d8d8
+    &_active 
+        .columns-left-item__icon
+            background-color: $gold
+        input
+            border: 2px solid $gold
+            color: #333
+            +bold
+            &::placeholder
+                +regular
+        .select2.select2-container--default .select2-selection--single,
+        .select2.select2-container--default .select2-selection--single:hover
+            border: 2px solid $gold!important
+            background: url('/icons/selection_cars/chevron-down-gold.svg') no-repeat right 10px center/50% 50% #fff!important
+        .columns-left-item__icon
+            svg 
+                fill: #030201!important
+    &_select-arrow
+        .select2.select2-container--default .select2-selection--single,
+        .select2.select2-container--default .select2-selection--single:hover
+           background: url('/icons/selection_cars/chevron-up.svg') no-repeat right 10px center/50% 50% #fff!important
+
+    .select2.select2-container--default .select2-selection--single,
+    .select2.select2-container--default .select2-selection--single:hover
+        height: 40px
+        border-radius: 20px
+        outline: none
+        border: solid 2px #d8d8d8
+        background: url('/icons/icon_calculator/arrow-down.svg') no-repeat right 10px center/50% 50% #fff
+        font-size: 14px
+    .select2.select2-container .select2-selection--single .select2-selection__rendered 
+        padding-left: 15px
+        padding-right: 15px
+        color: rgba(0,0,0, 0.4)
+        line-height: normal
+        display: flex
+        align-items: center
+        height: 100%
+
+    .select2.select2-container--default.select2-container--open.select2-container--below .select2-selection--single, 
+    .select2.select2-container--default.select2-container--open.select2-container--below .select2-selection--multiple,
+    .select2.select2-container--default.select2-container--open.select2-container--above .select2-selection--single, 
+    .select2.select2-container--default.select2-container--open.select2-container--above .select2-selection--multiple  
+        border-radius: 20px
+
+    .select2.select2-container--default .select2-selection--single .select2-selection__arrow
+        display: none
+        
+
+
+.car-type
+    &-wrap
+        display: flex
+        justify-content: space-between
+        align-items: flex-end
+    &-item
+        height: 175px
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: flex-end
+        cursor: pointer
+        &_radio
+            display: none
+        &__label
+            display: flex
+            justify-content: center
+            align-items: center
+            color: #ffffff
+            +bold 
+            font-size: 16px
+            width: 255px
+            height: 40px
+            border-radius: 20px
+            border: solid 2px #f7c935
+            cursor: pointer
+            margin-top: 13px
+        &:nth-last-child(3)
+            .car-type-item__switch
+                margin-bottom: -5px
+            .car-type-item__label
+                margin-top: -3px
+        &:nth-last-child(2), &:last-child 
+            .car-type-item__switch
+                margin-bottom: 5px
+        &__switch
+            margin-left: 35px
+            display: none
+        &_switch-on
+            display: block
+        &_lab-yellow
+            background-color: $gold
+
++desktop
+    .car-type
+        &-wrap
+            flex-wrap: wrap
+            width: 80% 
+            margin: auto 
+        &-item
+            width: 50%
+
+    .calculator
+        background: url('/images/asphalt_auto_automobile_calc.png') no-repeat center top/135% 100% #000000
+        &-form 
+            &__main-block
+                height: auto
+            &__columns
+                display: flex
+                &-left
+                    width: 50%
+                &-info
+                    width: 50%
+                    .column-info
+                        width: calc(100% - 10px)
+                        background-position: left -60px top 12px
+                    
+        
+        .columns-left-item
+            &__select
+            width: calc(100% - 20px)  
+            .select2.select2-container--default .select2-selection--single,
+            .select2.select2-container--default .select2-selection--single:hover
+                background-position: right -25px center
+
++tablet 
+    .calculator-form
+        &__columns
+            display: flex
+            align-items: center
+            flex-wrap: wrap
+            padding-right: 0
+            &-left
+                width: 100%
+                .columns-left-item
+                    width: 100%
+                    max-width: 100%!important
+                    position: relative
+                    &:nth-child(4), &:nth-child(5)
+                
+                        .select2.select2-container--default .select2-selection--single,
+                        .select2.select2-container--default .select2-selection--single:hover
+                            background: none
+                            &::before
+                                +pseudo
+                                width: 18px
+                                height: 18px 
+                                background-image: url('/icons/icon_calculator/arrow-down.svg')
+                                top: 12px
+                                right: 65px
+            &-info
+                width: 100%
+                .column-info
+                    width: 100%
+                    background-image: none
+                    margin-left: 0
+                    position: relative
+                    &::before
+                        +pseudo
+                        width: 15px
+                        height: 15px 
+                        background-image: url('/icons/icon_calculator/information.svg')
+                        top: 12px
+                        left: 15px
+
+                        
+        .columns-left-item
+            &__select
+            width: 100%  
+            .select2.select2-container--default .select2-selection--single,
+            .select2.select2-container--default .select2-selection--single:hover
+                background-position: right -75px center
+
++phone-lg
+    .calculator-form
+        &__scan
+                flex-wrap: wrap
+                input
+                    flex-basis: 100% 
+                .button_scan
+                    margin:
+                        left: auto
+                        right: auto
+                        top: 10px
+    .car-type
+        &-wrap
+            width: 100%
+            flex-direction: column
+            align-items: center
+
+
++phone-m 
+    .calculator-form
+        &__main-block
+            padding-left: 30px
+            padding-right: 30px
+
++phone-sm 
+    .calculator-form
+        &__main-block
+            padding-left: 15px
+            padding-right: 15px
+        &__scan
+            input
+                font-size: 12px
+                padding-left: 10px
+                padding-right: 10px
+        &__columns
+            &-left
+            &-info
+                .column-info
+                    padding-left: 30px
+                    &::before
+                        left: 10px
+                    &__field
+                        &-text
+                            font-size: 12px
+                            color: #333333
+
+
+
+                
+
+    
+
