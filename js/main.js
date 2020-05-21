@@ -4,10 +4,13 @@ $(document).ready(function ($) {
 
   /* range slider */
   $(".order-by-year__range").ionRangeSlider({
+    type: "double",
     min: 2000,
     max: 2019,
     from: 2005,
+    to: 2014,
     hide_min_max: true,
+    prettify_enabled: false,
   });
 
   /* select settings */
@@ -128,26 +131,23 @@ $(document).ready(function ($) {
   });
 
   /*  calculator block items toggle  */
-  function toggleCarType($switch, $label) {
-    $switch.toggleClass("car-type-item_switch-on");
+  function toggleCarType($label) {
     $label.toggleClass("car-type-item_lab-yellow");
   }
 
   function toggleCarTypeMain(clickElem, toggleCarType) {
     var $item = clickElem.closest(".car-type-item");
     var $label = $item.find(".car-type-item__label");
-    var $switch = $item.find(".car-type-item__switch");
     var $radio = $item.find(".car-type-item_radio");
     $(".car-type-item_radio").prop("checked", false);
     $radio.prop("checked", !$radio.prop("checked"));
 
-    toggleCarType($switch, $label);
+    toggleCarType($label);
 
     if ($(".car-type-item__label").hasClass("car-type-item_lab-yellow")) {
       $(".car-type-item__label").removeClass("car-type-item_lab-yellow");
-      $(".car-type-item__switch").removeClass("car-type-item_switch-on");
 
-      toggleCarType($switch, $label);
+      toggleCarType($label);
     }
     if (!$label.hasClass("car-type-item_lab-yellow")) {
       $radio.prop("checked", false);
@@ -166,29 +166,26 @@ $(document).ready(function ($) {
   });
 
   /* car lighting */
-  function toggleLighting($item, $switch, $floor) {
+  function toggleLighting($item, $floor) {
     $item.toggleClass("cars-item_lighting-bg");
-    $switch.toggleClass("cars-item__switch_on");
     $floor.toggleClass("cars-item__floor_yellow");
   }
 
   $(".cars-item").on("click", function (event) {
     var clickedElement = $(event.target);
     var $item = clickedElement.closest(".cars-item");
-    var $switch = $item.find(".cars-item__switch");
     var $floor = $item.find(".cars-item__floor");
 
-    toggleLighting($item, $switch, $floor);
+    toggleLighting($item, $floor);
 
     if ($(".cars-item__floor").hasClass("cars-item__floor_yellow")) {
       $(".cars-item__floor").removeClass("cars-item__floor_yellow");
-      $(".cars-item__switch").removeClass("cars-item__switch_on");
       $(".cars-item").removeClass("cars-item_lighting-bg");
       // write value in hidden input
       var val = $item.find(".cars-item__descr>strong").text();
       $(".order-by-year__hidden-input").val(val);
 
-      toggleLighting($item, $switch, $floor);
+      toggleLighting($item, $floor);
     } else {
       $(".order-by-year__hidden-input").val("");
     }
@@ -244,7 +241,8 @@ $(document).ready(function ($) {
       .find(".rate-item__check-block")
       .toggleClass("rate-item__check-block_open");
     $(this).parent().parent().toggleClass("rate-item_item-height");
-    $(this).parent().find(".rate-item__panel").slideToggle(1500);
+    $panel = $(this).parent().find(".rate-item__panel");
+    $panel.slideToggle(1500);
   });
 
   // When the user clicks on the button, scroll to the top of the document

@@ -42,6 +42,8 @@
             +bold
             margin: 0 auto
             background: url("/icons/icon_calculator/pdf.svg") no-repeat  right -15px center/40% 40% $gold
+            &:hover
+                background-color: $gold-dark
         &__columns
             display: flex
             &-left
@@ -168,7 +170,9 @@
         .select2.select2-container--default .select2-selection--single,
         .select2.select2-container--default .select2-selection--single:hover
            background: url('/icons/selection_cars/chevron-up.svg') no-repeat right 10px center/50% 50% #fff!important
-
+     
+    .select2.select2-container 
+        width: 100% !important
     .select2.select2-container--default .select2-selection--single,
     .select2.select2-container--default .select2-selection--single:hover
         height: 40px
@@ -225,17 +229,13 @@
             cursor: pointer
             margin-top: 13px
         &:nth-last-child(3)
-            .car-type-item__switch
-                margin-bottom: -5px
             .car-type-item__label
                 margin-top: -3px
-        &:nth-last-child(2), &:last-child 
-            .car-type-item__switch
+        &:nth-last-child(2)
+            .car-type-item__battery
                 margin-bottom: 5px
-        &__switch
+        &__battery
             margin-left: 35px
-            display: none
-        &_switch-on
             display: block
         &_lab-yellow
             background-color: $gold
@@ -264,14 +264,20 @@
                         width: calc(100% - 10px)
                         background-position: left -60px top 12px
                     
-        
-        .columns-left-item
-            &__select
-            width: calc(100% - 20px)  
+    .columns-left-item
+        &__select
+            width: calc(100% - 20px)
+        .select2.select2-container--default .select2-selection--single,
+        .select2.select2-container--default .select2-selection--single:hover
+                background-position: right -10px center
+        &_active 
             .select2.select2-container--default .select2-selection--single,
             .select2.select2-container--default .select2-selection--single:hover
-                background-position: right -25px center
-
+                background-position: right -10px center!important
+        &_select-arrow
+            .select2.select2-container--default .select2-selection--single,
+            .select2.select2-container--default .select2-selection--single:hover
+                background-position: right -10px center!important
 +tablet 
     .calculator-form
         &__columns
@@ -285,18 +291,34 @@
                     width: 100%
                     max-width: 100%!important
                     position: relative
-                    &:nth-child(4), &:nth-child(5)
-                
+                    &_select-arrow, &_active, &:nth-child(4), &:nth-child(5)
                         .select2.select2-container--default .select2-selection--single,
                         .select2.select2-container--default .select2-selection--single:hover
-                            background: none
+                            background: none!important
                             &::before
                                 +pseudo
                                 width: 18px
                                 height: 18px 
-                                background-image: url('/icons/icon_calculator/arrow-down.svg')
                                 top: 12px
-                                right: 65px
+                                right: 75px
+                   
+                    .select2.select2-container--default .select2-selection--single,
+                    .select2.select2-container--default .select2-selection--single:hover
+                        &::before
+                            background-image: url('/icons/icon_calculator/arrow-down.svg')
+                    
+                    &_active
+                        .select2.select2-container--default .select2-selection--single,
+                        .select2.select2-container--default .select2-selection--single:hover
+                            &::before
+                                background-image: url('/icons/selection_cars/chevron-down-gold.svg')
+                    &_select-arrow
+                        .select2.select2-container--default .select2-selection--single,
+                        .select2.select2-container--default .select2-selection--single:hover
+                            &::before
+                                background-image: url('/icons/selection_cars/chevron-down-gold.svg')
+                                transform: rotateX(180deg)
+                                
             &-info
                 width: 100%
                 .column-info
@@ -316,9 +338,6 @@
         .columns-left-item
             &__select
             width: 100%  
-            .select2.select2-container--default .select2-selection--single,
-            .select2.select2-container--default .select2-selection--single:hover
-                background-position: right -75px center
 
 +phone-lg
     .calculator-form

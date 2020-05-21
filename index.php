@@ -105,33 +105,24 @@
           <div class="car-type-wrap">
             <div class="car-type-item">
               <input type="radio" value="Мото" class="car-type-item_radio" id="car-type-item_1">
-              <div class="car-type-item__switch">
-                <img src="/icons/selection_cars/switch.png" alt="Переключатель">
-              </div>
               <img src="/images/moto-ab.png" alt="Тип мото">
               <label for="car-type-item_1" class="car-type-item__label">Мото</label>
             </div>
             <div class=" car-type-item">
               <input type="radio" value="Легковые" class="car-type-item_radio" id="car-type-item_2">
-              <div class="car-type-item__switch">
-                <img src="/icons/selection_cars/switch.png" alt="Переключатель">
-              </div>
               <img src="/images/aston_martin_car_branding_mockup_free_psd.png" alt="Тип легковые">
               <label for="car-type-item_2" class="car-type-item__label">Легковые</label>
             </div>
             <div class="car-type-item">
               <input type="radio" value="Електро" class="car-type-item_radio" id="car-type-item_3">
-              <div class="car-type-item__switch">
-                <img src="/icons/selection_cars/switch.png" alt="Переключатель">
+              <div class="car-type-item__battery">
+                <img src="/icons/selection_cars/battery.png" alt="Переключатель">
               </div>
               <img src="/images/tesla_branding.png" alt="Тип електро">
               <label for="car-type-item_3" class="car-type-item__label">Електро</label>
             </div>
             <div class="car-type-item">
               <input type="radio" value="Пикап" class="car-type-item_radio" id="car-type-item_4">
-              <div class="car-type-item__switch">
-                <img src="/icons/selection_cars/switch.png" alt="Переключатель">
-              </div>
               <img src="/images/pickup_mock_up_01.png" alt="Тип пикап">
               <label for="car-type-item_4" class="car-type-item__label">Пикап</label>
             </div>
@@ -677,7 +668,6 @@
         <h2>ПОДБОР АВТО ИЗ США</h2>
         <div class="cars">
           <div class="cars-item">
-            <div class="cars-item__switch"><img src="/icons/selection_cars/switch.png" alt="Значок переключателя"></div>
             <img src="/images/moto.png" alt="Мотоцикл" class="cars-item__img">
             <div class="cars-item__floor"></div>
             <div class="cars-item__descr">
@@ -687,7 +677,6 @@
             </div>
           </div>
           <div class="cars-item">
-            <div class="cars-item__switch"><img src="/icons/selection_cars/switch.png" alt="Значок переключателя"></div>
             <img src="/images/snowflake.png" alt="Седан" class="cars-item__img">
             <div class="cars-item__floor" id="car-id"></div>
             <div class="cars-item__descr">
@@ -697,7 +686,6 @@
             </div>
           </div>
           <div class="cars-item">
-            <div class="cars-item__switch"><img src="/icons/selection_cars/switch.png" alt="Значок переключателя"></div>
             <img src="/images/luxury_white_pearl.png" alt="Купе" class="cars-item__img">
             <div class="cars-item__floor"></div>
             <div class="cars-item__descr">
@@ -707,7 +695,7 @@
             </div>
           </div>
           <div class="cars-item">
-            <div class="cars-item__switch"><img src="/icons/selection_cars/switch.png" alt="Значок переключателя"></div>
+            <div class="cars-item__battery"><img src="/icons/selection_cars/battery.png" alt="Значок переключателя"></div>
             <img src="/images/tesla_branding_123.png" alt="Электрокар" class="cars-item__img">
             <div class="cars-item__floor"></div>
             <div class="cars-item__descr">
@@ -717,7 +705,6 @@
             </div>
           </div>
           <div class="cars-item">
-            <div class="cars-item__switch"><img src="/icons/selection_cars/switch.png" alt="Значок переключателя"></div>
             <img src="/images/suv.png" alt="Внедорожник" class="cars-item__img">
             <div class="cars-item__floor"></div>
             <div class="cars-item__descr">
@@ -727,7 +714,6 @@
             </div>
           </div>
           <div class="cars-item">
-            <div class="cars-item__switch"><img src="/icons/selection_cars/switch.png" alt="Значок переключателя"></div>
             <img src="/images/picap.png" alt="Пикап" class="cars-item__img">
             <div class="cars-item__floor"></div>
             <div class="cars-item__descr">
@@ -737,7 +723,6 @@
             </div>
           </div>
           <div class="cars-item">
-            <div class="cars-item__switch"><img src="/icons/selection_cars/switch.png" alt="Значок переключателя"></div>
             <img src="/images/miniven.png" alt="Минивэн" class="cars-item__img">
             <div class="cars-item__floor"></div>
             <div class="cars-item__descr">
@@ -747,7 +732,6 @@
             </div>
           </div>
           <div class="cars-item">
-            <div class="cars-item__switch"><img src="/icons/selection_cars/switch.png" alt="Значок переключателя"></div>
             <img src="/images/sprinter_worker.png" alt="Mercedes-Benz Sprinter Worker" class="cars-item__img">
             <div class="cars-item__floor"></div>
             <div class="cars-item__descr">
@@ -891,7 +875,7 @@
             </div>
             <div class="contacts-address">
               <a href="https://goo.gl/maps/5pjgVMF2cArS1PiRA" class="contacts__link contacts_link-light">
-                <img src="../images/marker.png" alt="marker icon"><span class="contacts__address">м. Київ, вул. Сверстюка 19,
+                <img src="../icons/map/marker.png" alt="marker icon"><span class="contacts__address">м. Київ, вул. Сверстюка 19,
                   10 поверх, офіс 13</span></a></div>
           </div>
           <div class="contacts-social">

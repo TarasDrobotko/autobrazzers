@@ -17,10 +17,11 @@
             width: auto
         .irs-handle:hover > i:first-child, .irs-handle.state_hover > i:first-child 
             background-color: #575656
-        .irs-single
+        .irs-from, .irs-to, .irs-single
            background-color: transparent
            font-size: 14px
            color: $gold
            top: 35px
-        .irs-single::before
-           display: none
+        .irs-from, .irs-to, .irs-single
+            &::before
+                display: none
