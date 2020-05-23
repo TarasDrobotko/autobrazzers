@@ -27,23 +27,25 @@
       line-height: 1.5
       div img
          height: 22px
-         vertical-align: bottom
+         float: left
    &__link
       text-decoration: none
       color: #ffffff
-      display: inline-block
    &_link-light
       &:hover
          color: #d8cbcb
    &-tel
-      padding-bottom: 20px
+      padding-bottom: 23px
       padding-top: 10px
-   &__tel 
-      padding-left: 6px
-   &__address 
-      padding-left: 15px
+      a img 
+         margin-top: 3px
+         padding-right: 9px
    &-address
       padding-bottom: 40px
+      a img 
+         margin-top: 7px
+         padding-right: 14px
+         margin-bottom: 20px
    &-bottom
       background: url('../images/contacts-bottom.png') center top/cover no-repeat #000000
    &__container
@@ -71,10 +73,13 @@
 
 +tablet 
    .contacts
-       &-block
-          top: 220px
-          width: 300px
-          padding-right: 31px
+      &-items
+      &-address
+         padding-bottom: 20px
+      &-block
+         top: 220px
+         width: 300px
+         padding-right: 31px
    .contacts-bottom 
       .order-block
          &__group
@@ -91,7 +96,7 @@
          h3 
             font-size: 16px
       &-address
-         padding-bottom: 15px
+         padding-bottom: 10px
       &-bottom 
          .order-block
             &__group
@@ -107,7 +112,10 @@
          left: calc(100% - 15px)
       &-tel
          padding-top: 0
-         padding-bottom: 15px
+         padding-bottom: 10px
+      &-address
+         padding-bottom: 0px
+         margin-bottom: -15px
       &-bottom 
          .order-block
             height: 320px
@@ -119,6 +127,9 @@
                   font-size: 22px
 
 +phone-sm
+   .contacts
+      &-address
+         margin-bottom: 0
    .contacts-bottom 
       .order-block
          bottom: 110px

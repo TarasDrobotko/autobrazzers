@@ -872,11 +872,14 @@
               <a href="tel:+380970770975" class="contacts__link contacts_link-light">
                 <img src="/icons/menu_icons/telephone.svg" alt="telephone icon" class="contacts_tel-img" />
                 <span class="contacts__tel">+38 (097) 077 09 75</span>
+              </a>
             </div>
             <div class="contacts-address">
               <a href="https://goo.gl/maps/5pjgVMF2cArS1PiRA" class="contacts__link contacts_link-light">
                 <img src="../icons/map/marker.png" alt="marker icon"><span class="contacts__address">м. Київ, вул. Сверстюка 19,
-                  10 поверх, офіс 13</span></a></div>
+                  10 поверх, офіс 13</span>
+              </a>
+            </div>
           </div>
           <div class="contacts-social">
             <?php include 'sections_include/svg_social_icons.php'; ?>
