@@ -98,7 +98,7 @@
     <div class="header-line"></div>
   </header>
   <main>
-    <section class="intro"></section>
+    <!-- <section class="intro"></section> -->
     <section class="calculator" id="calculator">
       <div class="container">
         <h2>КАЛЬКУЛЯТОР РАСТАМОЖКИ АВТО ИЗ США</h2>
