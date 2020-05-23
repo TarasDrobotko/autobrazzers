@@ -26,12 +26,12 @@
               <span id="main-menu__menu">Mеню</span>
               <ul class="main-menu-nested">
                 <li><a href="#calculator" class="main-menu-nested__link">калькулятор растаможки</a></li>
-                <li><a href="#" class="main-menu-nested__link">примеры ценообразования</a></li>
-                <li><a href="#" class="main-menu-nested__link">последовательность</a></li>
-                <li><a href="#" class="main-menu-nested__link">услуги</a></li>
-                <li><a href="#" class="main-menu-nested__link">подбор авто</a></li>
-                <li><a href="#" class="main-menu-nested__link">отзывы</a></li>
-                <li><a href="#" class="main-menu-nested__link">контакты</a></li>
+                <li><a href="#benefits" class="main-menu-nested__link">примеры ценообразования</a></li>
+                <li><a href="#sequence-work" class="main-menu-nested__link">последовательность</a></li>
+                <li><a href="#rate" class="main-menu-nested__link">услуги</a></li>
+                <li><a href="#selection-cars" class="main-menu-nested__link">подбор авто</a></li>
+                <li><a href="#reviews" class="main-menu-nested__link">отзывы</a></li>
+                <li><a href="#contacts" class="main-menu-nested__link">контакты</a></li>
                 <?php include 'sections_include/main_menu_li.php'; ?>
               </ul>
             </li>
@@ -98,6 +98,7 @@
     <div class="header-line"></div>
   </header>
   <main>
+    <section class="intro"></section>
     <section class="calculator" id="calculator">
       <div class="container">
         <h2>КАЛЬКУЛЯТОР РАСТАМОЖКИ АВТО ИЗ США</h2>
@@ -362,7 +363,7 @@
         </form>
       </div>
     </section>
-    <section class="benefits">
+    <section class="benefits" id="benefits">
       <div class="container">
         <h2>ПРИМЕРЫ ЦЕНООБРАЗОВАНИЯ И ВЫГОДЫ АВТО ИЗ ШТАТОВ</h2>
         <div class="benefits-items">
@@ -525,7 +526,7 @@
       </div>
       </div>
     </section>
-    <section class="sequence-work">
+    <section class="sequence-work" id="sequence-work">
       <div class="container">
         <h2>ПОСЛЕДОВАТЕЛЬНОСТЬ НАШЕЙ РАБОТЫ</h2>
         <div class="sequence-work-wrap">
@@ -580,7 +581,7 @@
         </div>
       </div>
     </section>
-    <section class="rate">
+    <section class="rate" id="rate">
       <div class="container">
         <h2>ТАРИФНАЯ СЕТКА НА УСЛУГИ</h2>
         <div class="rate-wrapper">
@@ -663,7 +664,7 @@
         </div>
       </div>
     </section>
-    <section class="selection-cars">
+    <section class="selection-cars" id="selection-cars">
       <div class="container">
         <h2>ПОДБОР АВТО ИЗ США</h2>
         <div class="cars">
@@ -762,7 +763,7 @@
         </div>
       </div>
     </section>
-    <section class="reviews">
+    <section class="reviews" id="reviews">
       <h2>ОТЗЫВЫ</h2>
       <div class="container">
         <div class="reviews-items">
@@ -859,7 +860,7 @@
         </div>
       </div>
     </section>
-    <section class="contacts">
+    <section class="contacts" id="contacts">
       <h2>КОНТАКТЫ</h2>
       <!--The div element for the map -->
       <div id="map">
