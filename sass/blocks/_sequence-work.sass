@@ -75,27 +75,40 @@
 
 +tablet 
     .sequence-work
+        background-position:  left -70px bottom -200px
+        background-size: 220% 125%
         &__item 
             width: 50%
             &::before
                 font-size: 170px
             &:nth-last-child(5)
                 border-top-width: 0
-            &:nth-last-child(9)
+            &:nth-last-child(9), &:nth-last-child(10)
                 border-top-width: 1px
             &:nth-last-child(3), &:nth-last-child(4), &:nth-last-child(9)
                 border-bottom-width: 1px
             &:nth-last-child(2), &:nth-last-child(6)
                 border-left-width: 0
+            &:nth-last-child(12)
+                border-bottom-width: 0
             &:nth-last-child(1)
                 border-image: linear-gradient(to bottom, rgba(#ffffff,.4) 70%, rgba(#ffffff,0)) 1
-            &:nth-last-child(2), &:nth-last-child(4), &:nth-last-child(6), &:nth-last-child(8), &:nth-last-child(10), &:nth-last-child(12)
+            &:nth-last-child(2), &:nth-last-child(4), &:nth-last-child(6), &:nth-last-child(8), &:nth-last-child(10),
                 border-image: linear-gradient(to left, rgba(#ffffff,.4) 70%, rgba(#ffffff,0)) 1
             &:nth-last-child(3), &:nth-last-child(5), &:nth-last-child(7), &:nth-last-child(9)
                 border-image: linear-gradient(to right, rgba(#ffffff,.4) 70%, rgba(#ffffff,0)) 1
             &:nth-last-child(11)
                 border-image: linear-gradient(to top, rgba(#ffffff,.4) 70%, rgba(#ffffff,0)) 1
                 border-bottom-width: 0
+
++phone-m
+    .sequence-work
+        background-position:  left 100px bottom -200px
++phone-sm
+    .sequence-work
+        background-position:  left 120px bottom -200px
+        
+
 
 
                            
