@@ -1,5 +1,5 @@
  <!-- facebook SVG icon  -->
- <a href="#" class="ico-social-header__link">
+ <a href="#" class="ico-social-intro__link">
  	<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" fill="#f7c935">
  		<path d="M75,512h167V330h-60v-60h60v-75c0-41.4,33.6-75,75-75h75v60h-60c-16.5,0-30,13.5-30,30v60h87.3l-10,60H302v182h135
 	c41.4,0,75-33.6,75-75V75c0-41.4-33.6-75-75-75H75C33.6,0,0,33.6,0,75v362C0,478.4,33.6,512,75,512z M30,75c0-24.8,20.2-45,45-45
@@ -9,7 +9,7 @@
  </a>
 
  <!-- instagram SVG icon  -->
- <a href="#" class="ico-social-header__link">
+ <a href="#" class="ico-social-intro__link">
  	<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" fill="#f7c935">
  		<path d="M373.4,0H138.6C62.2,0,0,62.2,0,138.6v234.8C0,449.8,62.2,512,138.6,512h234.8c76.4,0,138.6-62.2,138.6-138.6V138.6
 	C512,62.2,449.8,0,373.4,0z M482,373.4c0,59.9-48.7,108.6-108.6,108.6H138.6C78.7,482,30,433.3,30,373.4V138.6
@@ -22,7 +22,7 @@
  </a>
 
  <!-- youtube SVG icon  -->
- <a href="#" class="ico-social-header__link">
+ <a href="#" class="ico-social-intro__link">
  	<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 387.8" style="enable-background:new 0 0 512 387.8;" xml:space="preserve" fill="#f7c935">
  		<path d="M334.8,171l-113.1-61.9c-6.5-3.6-14.2-3.4-20.6,0.4c-6.4,3.8-10.2,10.5-10.2,17.9V250c0,7.4,3.8,14,10.1,17.8
 	c3.3,2,7,3,10.7,3c3.4,0,6.7-0.8,9.8-2.5l113.1-60.8c6.7-3.6,10.9-10.6,10.9-18.2C345.6,181.7,341.5,174.7,334.8,171z M220.9,234.6
@@ -41,7 +41,7 @@
  	</svg>
  </a>
  <!-- telegram SVG icon  -->
- <a href="#" class="ico-social-header__link">
+ <a href="#" class="ico-social-intro__link">
  	<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 441.3" style="enable-background:new 0 0 512 441.3;" xml:space="preserve" fill="#f7c935">
  		<path d="M121.5,252.7L185,411.6l82.8-82.8l141.5,112.5L512,0L0,205.5L121.5,252.7z M81.5,205l244-97.9L131.5,224.4L81.5,205z
 	 M369.1,115.8L207.1,264l-19.5,73.4l-36-90.1L369.1,115.8z M219.2,335l9.8-37l15.1,12L219.2,335z M390.9,388.4L243.5,271.3

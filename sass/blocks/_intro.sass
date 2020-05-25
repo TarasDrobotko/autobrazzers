@@ -1,0 +1,153 @@
+.intro
+    background: url('/images/usa_header.png') no-repeat center top /cover #000000
+    padding-top: 253px
+    position: relative
+    margin-top: -253px
+    z-index: 1
+    .order-block
+        background: url('/images/car_present.png') no-repeat left top/contain #000000
+
+    &-group
+        display: flex
+        justify-content: space-between
+.main-text
+    font-size: 20px
+    text-align: left
+    h1 
+        font-size: 210%
+        +bold 
+        color: $gold
+        margin-bottom: 24px
+        text-transform: uppercase
+    &__subtitle
+        text-transform: uppercase
+        font-size: 120%
+        line-height: 1.25
+        color: $gold
+    &__ad
+        +light 
+        font-size: 100%
+        color: #ffffff
+        line-height: 1.8
+        max-width: calc(50%)
+        margin-top: 12px
+        margin-bottom: 162px
+
+/* consult form */
+.form
+    position: relative
+    &__order-tel   
+        width: 445px
+        height: 54px
+        +bold
+        border-radius: 27px
+        background-color: $gold
+        border-width: 0
+        padding-left: 30px
+        &::placeholder
+            color: #000000
+            opacity: 1
+    &__order-call
+        +bold
+        background-color: #080808
+        color: $gold
+        position: absolute
+        left: 283px
+        top: 2px
+        border-width: 0
+    &__order-call:hover
+        background-color: #141414
+
+.ico-social-intro
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+    margin-top: 80px
+    &__link
+        margin-bottom: 40px
+
+.order-block
+    position: relative
+    bottom: 37px
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+    height: 284px
+    border: solid 1px $gold
+    border-radius: 15px
+    &__group
+        width: calc(50% - 14px)
+        h3 
+            color: $gold
+            font-size: 26px
+            +bold
+            margin-bottom: 12px
+            margin-top: 0
+    &__consult-text
+        color: #ffffff
+        font-size: 16px
+        line-height: 1.63
+        margin-top: 67px
+        strong
+            text-transform: uppercase
+            color: $gold
+            
++desktop
+    .intro
+        background-position: left 60% top
+
++tablet 
+    .intro
+        background-position: left 70% top
+    .form
+        &__order-tel
+            width: calc(100% - 15px)
+        &__order-call
+            left: calc(100% - 177px)
+    .intro .order-block
+        background-size: 100% 120%
+        &__group
+           width: 60%
+
+    .intro-group
+        .main-text
+            font-size: 105%
+
++phone-lg
+    .intro
+        background-size: 155% 110% 
+        background-position-x: left 
+        .order-block
+            &__group
+                width: 80%
+            &__consult-text
+                width: calc(100% - 15px)
+        .intro-group
+            .main-text
+                font-size: 100%
+                &__subtitle, h1 
+                    display: block 
+                    width: 96%
+                &__ad
+                    max-width: 80%
+
++phone-m
+    .intro 
+        background-size: 210% 110% 
+        background-position: left -150px top
+        .order-block
+            &__group
+                width: calc(100% - 30px)
+            &__consult-text
+                margin-top: 10%
+    .form
+        &__order-call
+            top: calc(100% + 15px)
+            left: 50%
+            transform: translateX(-50%)
+            border: 1px solid $gold
+
++phone-sm
+    .intro 
+        background-size: 210% 110% 
+        background-position: left -80px top

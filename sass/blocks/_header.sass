@@ -1,7 +1,6 @@
 header
-    background: url('/images/usa_header.png') no-repeat center top/cover #000000
-    .order-block
-        background: url('/images/car_present.png') no-repeat left top/contain #000000
+    position: relative
+    z-index: 2
     .header-line
         height: 1px
         width: 100%
@@ -12,9 +11,10 @@ header
 .header-top-group
     display: flex
     flex-flow: row wrap
-    padding-top: 24px
+    padding-top: 17px
     margin-bottom: 152px
     .logo
+        margin-top: 7px
         max-width: 160px
         flex: 1 160px
 nav 
@@ -27,7 +27,7 @@ nav
         border-radius: 50% 
         background-color: transparent
         right: 6px
-        top: -20px
+        top: -13px
         cursor: pointer
         &:focus
             outline: none
@@ -65,6 +65,9 @@ nav
         color: #ffffff
         flex-basis: 1 auto
         padding-left: 0
+        &_tel-img
+            margin-top: 2px
+            vertical-align: bottom
         &__link
             +link
         &__li_active
@@ -90,6 +93,7 @@ nav
             font-size: 14px
             text-align: left
             position: absolute
+            top: 60px
             left: -160px
             height: 44px
             line-height: 44px
@@ -148,92 +152,6 @@ nav
         vertical-align: bottom
         margin-left: 15px
 
-.order-block
-    position: relative
-    bottom: 37px
-    display: flex
-    flex-direction: column
-    align-items: flex-end
-    height: 284px
-    border: solid 1px $gold
-    border-radius: 15px
-    &__group
-        width: calc(50% - 14px)
-        h3 
-            color: $gold
-            font-size: 26px
-            +bold
-            margin-bottom: 12px
-            margin-top: 0
-    &__consult-text
-        color: #ffffff
-        font-size: 16px
-        line-height: 1.63
-        margin-top: 67px
-        strong
-            text-transform: uppercase
-            color: $gold
-
-/* header group below  navbar */
-.header-group
-    display: flex
-    justify-content: space-between
-.main-text
-    font-size: 20px
-    text-align: left
-    h1 
-        font-size: 210%
-        +bold 
-        color: $gold
-        margin-bottom: 24px
-        text-transform: uppercase
-    &__subtitle
-        text-transform: uppercase
-        font-size: 120%
-        line-height: 1.25
-        color: $gold
-    &__ad
-        +light 
-        font-size: 100%
-        color: #ffffff
-        line-height: 1.8
-        max-width: calc(50%)
-        margin-top: 12px
-        margin-bottom: 162px
-
-/* consult form */
-.form
-    position: relative
-    &__order-tel   
-        width: 445px
-        height: 54px
-        +bold
-        border-radius: 27px
-        background-color: $gold
-        border-width: 0
-        padding-left: 30px
-        &::placeholder
-            color: #000000
-            opacity: 1
-    &__order-call
-        +bold
-        background-color: #080808
-        color: $gold
-        position: absolute
-        left: 283px
-        top: 2px
-        border-width: 0
-    &__order-call:hover
-        background-color: #141414
-
-.ico-social-header
-    display: flex
-    flex-direction: column
-    align-items: flex-end
-    margin-top: 80px
-    &__link
-        margin-bottom: 40px
-
 /* select languages */
 
 /* The container <div> - needed to position the dropdown content */
@@ -270,7 +188,7 @@ nav
     &__btn::before
         +pseudo
         right: 75px
-        top: -7px
+        top: -5px
         cursor: pointer
         background: url('/icons/language_icons/rus.png') no-repeat left center
         height: 18px
@@ -292,7 +210,6 @@ nav
 
 +desktop
     header
-        background-size: 120% 100%
         .container
             .header-top-group
                 .main-menu
@@ -311,10 +228,14 @@ nav
                             min-width: 300px
                             &:nth-child(8), &:nth-child(9)
                                 display: inline-block
+                            &:nth-child(9)
+                                padding-bottom: 10px
                             &:first-child
                                 padding-top: 10px
                             &:last-child
                                 padding-bottom: 15px
+                    &_tel-img
+                        vertical-align: middle
                             
        
 +tablet 
@@ -323,19 +244,9 @@ nav
             width: calc(100% - 15px)
         &__order-call
             left: calc(100% - 177px)
-    header .order-block
-        background-size: 100% 120%
-        &__group
-           width: 60%
-
-    .header-group
-        .main-text
-            font-size: 105%
 
 +phone-lg
     header
-        background-size: 150% 110% 
-        background-position-x: left
         .container
             .header-top-group
                 .main-menu
@@ -350,14 +261,14 @@ nav
                         display: none
                     &-nested
                         left: -380%
-                        top: 50px
+                        top: 60px
                         li
                             &:nth-child(9) ~ li
                                 display: inline-block
                             &:last-child
                                 padding-bottom: 25px
                     &_tel-img
-                        vertical-align: middle
+                        padding-bottom: 0
                     .dropdown
                         &__btn::before
                             top: 5px
@@ -369,33 +280,6 @@ nav
                 .button 
                     .button__login-img
                             vertical-align: middle
-
-        .order-block
-            &__group
-                width: 80%
-            &__consult-text
-                width: calc(100% - 15px)
-        .header-group
-            .main-text
-                font-size: 100%
-                &__subtitle, h1 
-                    display: block 
-                    width: 96%
-                &__ad
-                    max-width: 80%
-
-+phone-m
-    header .order-block
-        &__group
-           width: calc(100% - 30px)
-        &__consult-text
-            margin-top: 10%
-    .form
-        &__order-call
-            top: calc(100% + 15px)
-            left: 50%
-            transform: translateX(-50%)
-            border: 1px solid $gold
           
 +phone-sm
     header

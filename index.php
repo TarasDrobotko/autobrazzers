@@ -69,36 +69,39 @@
           </ul>
         </nav>
       </div>
-      <div class="header-group">
-        <div class="main-text">
-          <h1>Сервис доставки авто из США</h1>
-          <span class="main-text__subtitle">Покупайте автомобили выгодно вместе с нами</span>
-          <p class="main-text__ad">
-            Мы сделали доставку доступной и понятной каждому! Наш сервис
-            Предоставляет прозрачную систему покупки автомобиля с аукционов США
-            Copart, IAAI, Manheim
-          </p>
-        </div>
-        <div class="ico-social-header">
-          <?php include 'sections_include/svg_social_icons.php'; ?>
-        </div>
-      </div>
-      <div class="order-block">
-        <div class="order-block__group">
-          <p class="order-block__consult-text">
-            Укажите ваш номер телефона и получите полную, квалифицированную
-            консультацию <strong>Бесплатно</strong></p>
-          <form action="#" class="form consult__form" method="post">
-            <input type="tel" class="input form__order-tel" name="tel_order" placeholder="+38 (0__) ___ __ __" />
-            <input type="submit" class="button form__order-call" value="Заказать" />
-          </form>
-        </div>
-      </div>
     </div>
     <div class="header-line"></div>
   </header>
   <main>
-    <!-- <section class="intro"></section> -->
+    <section class="intro">
+      <div class="container">
+        <div class="intro-group">
+          <div class="main-text">
+            <h1>Сервис доставки авто из США</h1>
+            <span class="main-text__subtitle">Покупайте автомобили выгодно вместе с нами</span>
+            <p class="main-text__ad">
+              Мы сделали доставку доступной и понятной каждому! Наш сервис
+              Предоставляет прозрачную систему покупки автомобиля с аукционов США
+              Copart, IAAI, Manheim
+            </p>
+          </div>
+          <div class="ico-social-intro">
+            <?php include 'sections_include/svg_social_icons.php'; ?>
+          </div>
+        </div>
+        <div class="order-block">
+          <div class="order-block__group">
+            <p class="order-block__consult-text">
+              Укажите ваш номер телефона и получите полную, квалифицированную
+              консультацию <strong>Бесплатно</strong></p>
+            <form action="#" class="form consult__form" method="post">
+              <input type="tel" class="input form__order-tel" name="tel_order" placeholder="+38 (0__) ___ __ __" />
+              <input type="submit" class="button form__order-call" value="Заказать" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="calculator" id="calculator">
       <div class="container">
         <h2>КАЛЬКУЛЯТОР РАСТАМОЖКИ АВТО ИЗ США</h2>
